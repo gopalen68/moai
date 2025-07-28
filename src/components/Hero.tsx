@@ -15,7 +15,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-primary/20"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Floating Elements */}
@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="gradient-text">Built to Adapt.</span>
           </h1>
           
-          <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Transforming daily life and business with adaptable AI-powered systems that grow with you.
           </p>
           
