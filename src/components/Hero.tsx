@@ -36,9 +36,9 @@ export default function Hero() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="gradient-text">Designed to Think.</span>
+            <span className="">Designed to Think.</span>
             <br />
-            <span className="gradient-text">Built to Adapt.</span>
+            <span className="">Built to Adapt.</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">

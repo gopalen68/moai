@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Building2, Smartphone, Network, Code } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -30,6 +31,14 @@ const solutions = [
 ]
 
 export default function Solutions() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href)
+    element?.scrollIntoView({ behavior: 'smooth' })
+    setIsOpen(false)
+  }
+
   return (
     <section id="solutions" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,9 +96,9 @@ export default function Solutions() {
           <Card className="inline-block p-8 shadow-medium">
             <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-muted-foreground mb-6">
-              Let's discuss how MoAI can create the perfect AI solution for your needs.
+              Let's discuss how MoAi can create the perfect AI solution for your needs.
             </p>
-            <Button size="lg" className="shadow-medium">
+            <Button size="lg" className="shadow-medium" onClick={() => scrollToSection('#contact')}>
               Schedule a Consultation
             </Button>
           </Card>

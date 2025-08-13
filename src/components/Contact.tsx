@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'hello@moai.mu',
+    content: 'info@moai.mu',
     description: 'Send us an email anytime'
   },
   {
@@ -98,7 +98,7 @@ export default function Contact() {
 
             <Card className="mt-8 slide-up shadow-soft" style={{ animationDelay: '0.5s' }}>
               <CardContent className="p-6">
-                <h3 className="font-semibold mb-4">Why Choose MoAI?</h3>
+                <h3 className="font-semibold mb-4">Why Choose MoAi?</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>

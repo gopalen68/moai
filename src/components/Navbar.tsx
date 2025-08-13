@@ -2,12 +2,13 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import logo from '@/assets/moai_logo.png'
 
 const navigation = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Solutions', href: '#solutions' },
-  { name: 'Team', href: '#team' },
+  // { name: 'Team', href: '#team' },
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -26,7 +27,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold gradient-text">MoAI</h1>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">MoAi</span>
+              <img src={logo} alt="" width="158" height="48" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -71,8 +75,8 @@ export default function Navbar() {
                     </button>
                   ))}
                   <div className="px-4 pt-4">
-                    <Button 
-                      onClick={() => scrollToSection('#contact')} 
+                    <Button
+                      onClick={() => scrollToSection('#contact')}
                       className="w-full shadow-medium"
                     >
                       Get Started
