@@ -30,7 +30,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 slide-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            About <span className="gradient-text">MoAI</span>
+            About <span className="gradient-text">MoAi</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
         </div>
@@ -41,7 +41,7 @@ export default function About() {
             <h3 className="text-2xl font-semibold mb-6 text-primary">Our Story</h3>
             <div className="prose prose-lg text-muted-foreground space-y-4">
               <p>
-                MoAI is a Mauritius-born technology company founded by Sendilen and Gopalen, 
+                MoAi is a Mauritius-born technology company founded by Sendilen and Gopalen, 
                 with a bold vision to transform how artificial intelligence integrates into 
                 daily life and business. We develop AI-powered systems and automation tools 
                 that are not only smart, but deeply adaptable to changing environments.
