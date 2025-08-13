@@ -1,10 +1,11 @@
 import { Heart } from 'lucide-react'
+import logo from '@/assets/moai_logo.png'
 
 const footerLinks = {
   Company: [
     { name: 'About Us', href: '#about' },
-    { name: 'Our Team', href: '#team' },
-    { name: 'Careers', href: '#' },
+    // { name: 'Our Team', href: '#team' },
+    // { name: 'Careers', href: '#' },
     { name: 'Contact', href: '#contact' }
   ],
   Solutions: [
@@ -35,13 +36,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">MoAI</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">MoAi</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Transforming daily life and business with adaptable AI-powered systems that grow with you.
             </p>
-            <p className="text-sm text-muted-foreground/80">
+            {/* <p className="text-sm text-muted-foreground/80">
               Made with <Heart className="inline h-4 w-4 text-red-400" /> in Mauritius
-            </p>
+            </p> */}
           </div>
 
           {/* Links Sections */}
@@ -67,7 +68,7 @@ export default function Footer() {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              © {new Date().getFullYear()} MoAI. All rights reserved.
+              © {new Date().getFullYear()} MoAi. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <button className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -76,9 +77,9 @@ export default function Footer() {
               <button className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Terms of Service
               </button>
-              <button className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              {/* <button className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Cookie Policy
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
