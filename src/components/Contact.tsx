@@ -64,7 +64,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Get in <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
             Ready to transform your business with AI? Let's start a conversation about your vision.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
@@ -88,7 +88,7 @@ export default function Contact() {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">{info.title}</h3>
                         <p className="text-primary font-medium mb-1">{info.content}</p>
-                        <p className="text-sm text-muted-foreground">{info.description}</p>
+                        <p className="text-sm text-foreground/65">{info.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -99,7 +99,7 @@ export default function Contact() {
             <Card className="mt-8 slide-up shadow-soft" style={{ animationDelay: '0.5s' }}>
               <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Why Choose MoAi?</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-sm text-foreground/65">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                     Expert AI consultation

@@ -39,7 +39,7 @@ export default function About() {
           {/* Story Content */}
           <div className="slide-up" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-semibold mb-6 text-primary">Our Story</h3>
-            <div className="prose prose-lg text-muted-foreground space-y-4">
+            <div className="prose prose-lg text-foreground/65 space-y-4">
               <p>
                 MoAi is a Mauritius-born technology company founded by Sendilen and Gopalen, 
                 with a bold vision to transform how artificial intelligence integrates into 
@@ -71,7 +71,7 @@ export default function About() {
                     </div>
                     <h4 className="font-semibold text-foreground">{feature.title}</h4>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-foreground/65 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>

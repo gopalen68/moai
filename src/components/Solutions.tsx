@@ -46,7 +46,7 @@ export default function Solutions() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Our <span className="gradient-text">Solutions</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
             Comprehensive AI solutions designed to transform how you work, live, and innovate.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
@@ -68,7 +68,7 @@ export default function Solutions() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-foreground/65 mb-6 leading-relaxed">
                   {solution.description}
                 </p>
                 
@@ -76,7 +76,7 @@ export default function Solutions() {
                   {solution.features.map((feature) => (
                     <div key={feature} className="flex items-center">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      <span className="text-sm text-muted-foreground">{feature}</span>
+                      <span className="text-sm text-foreground/65">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -95,7 +95,7 @@ export default function Solutions() {
         <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
           <Card className="inline-block p-8 shadow-medium">
             <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-foreground/65 mb-6">
               Let's discuss how MoAi can create the perfect AI solution for your needs.
             </p>
             <Button size="lg" className="shadow-medium" onClick={() => scrollToSection('#contact')}>
