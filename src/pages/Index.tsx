@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Solutions from '@/components/Solutions'
 import Team from '@/components/Team'
 import Contact from '@/components/Contact'
+import ChatAI from '@/components/ChatAI'
 import Footer from '@/components/Footer'
 
 const Index = () => {
@@ -13,8 +14,9 @@ const Index = () => {
       <Hero />
       <About />
       <Solutions />
-      {/* <Team /> */}
-      <Contact />
+      <Team />
+      {/* <Contact /> */}
+      <ChatAI />
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import logo from '@/assets/moai_logo.png'
 const footerLinks = {
   Company: [
     { name: 'About Us', href: '#about' },
-    // { name: 'Our Team', href: '#team' },
+    { name: 'Our Team', href: '#team' },
     // { name: 'Careers', href: '#' },
     { name: 'Contact', href: '#contact' }
   ],
