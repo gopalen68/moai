@@ -78,6 +78,75 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --chat--color-primary: #3c83f6;             /* MoAi Blue */
+    --chat--color-primary-shade-50: #3475dc;    /* Darker Blue */
+    --chat--color-primary-shade-100: #2d66c2;   /* Even Darker Blue */
+
+    --chat--color-secondary: #000000;           /* Black accent */
+    --chat--color-secondary-shade-50: #222222;  /* Dark gray for hover */
+    --chat--color-secondary-shade-100: #444444; /* Lighter black */
+
+    --chat--color-white: #ffffff;               /* White */
+    --chat--color-light: #f5f5f5;               /* Light gray background */
+    --chat--color-light-shade-50: #e5e7eb;      /* Tailwind gray-200 */
+    --chat--color-light-shade-100: #d1d5db;     /* Tailwind gray-300 */
+
+    --chat--color-medium: #9ca3af;              /* Neutral gray (text) */
+    --chat--color-dark: #000000;                /* Pure Black */
+
+    --chat--color-disabled: #6b7280;            /* Gray-500 for disabled state */
+    --chat--color-typing: #374151;              /* Gray-700 for typing indicator */
+    --chat--input--text-color: #000000;
+
+    /* Core sizing & motion */
+    --chat--spacing: 0.75rem;                 /* tighter spacing */
+    --chat--border-radius: 0.75rem;           /* 12px, modern + soft */
+    --chat--transition-duration: 0.2s;
+
+    /* Window */
+    --chat--window--width: 360px;             /* slimmer, less bulky */
+    --chat--window--height: 560px;
+
+    /* Header */
+    --chat--header-height: 56px;
+    --chat--header--padding: 0.75rem 1rem;
+    --chat--header--background: var(--chat--color-white);
+    --chat--header--color: var(--chat--color-dark);
+    --chat--header--border-top: none;
+    --chat--header--border-bottom: 1px solid var(--chat--color-light-shade-50);
+    --chat--heading--font-size: 1rem;         /* clean, compact */
+    --chat--subtitle--font-size: 0.75rem;
+    --chat--subtitle--line-height: 1.4;
+
+    /* Input */
+    --chat--textarea--height: 44px;           /* shorter input for tighter feel */
+
+    /* Messages */
+    --chat--message--font-size: 0.92rem;      /* smaller but readable */
+    --chat--message--padding: 0.6rem 0.75rem; /* denser bubbles */
+    --chat--message--border-radius: 0.75rem;
+    --chat--message-line-height: 1.6;
+    --chat--message--bot--background: #f5f5f5; /* light gray bubble */
+    --chat--message--bot--color: var(--chat--color-dark);
+    --chat--message--bot--border: 1px solid var(--chat--color-light-shade-50);
+    --chat--message--user--background: var(--chat--color-primary); /* #3c83f6 */
+    --chat--message--user--color: var(--chat--color-white);
+    --chat--message--user--border: none;
+    --chat--message--pre--background: #eff6ff; /* subtle blue tint for code/blocks */
+
+    /* Toggle (launcher) */
+    --chat--toggle--background: var(--chat--color-primary);
+    --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+    --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+    --chat--toggle--color: var(--chat--color-white);
+    --chat--toggle--size: 56px;               /* smaller, more elegant */
+
+    /* Optional niceties (use if your system reads them) */
+    --chat--shadow: 0 10px 30px rgba(0,0,0,0.10);
+    --chat--border: 1px solid var(--chat--color-light-shade-50);
+    --chat--scrollbar-thumb: var(--chat--color-light-shade-100);
+    --chat--scrollbar-track: var(--chat--color-light);
   }
 
   .dark {
@@ -198,5 +267,26 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  #custom-chat {
+    /* Custom styling */
+    .chat-header p { display: none; }
+
+    /* .chat-messages-list .chat-message { max-width: 82%; } */
+
+    .chat-window {
+      box-shadow: var(--chat--shadow);
+      border: var(--chat--border);
+      border-radius: var(--chat--border-radius);
+      overflow: hidden;
+    }
+
+    .chat-messages::-webkit-scrollbar { width: 8px; }
+    .chat-messages::-webkit-scrollbar-thumb { background: var(--chat--scrollbar-thumb); border-radius: 8px; }
+    .chat-message::-webkit-scrollbar-track { background: var(--chat--scrollbar-track); }
+
+    .chat-header h1 { letter-spacing: 0.1px; font-weight: 600; }
+    .chat-header .subtitle { opacity: 0.7; }
   }
 }

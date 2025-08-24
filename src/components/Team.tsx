@@ -16,7 +16,7 @@ const founders = [
     role: 'Co-Founder & CTO',
     bio: 'Technical architect driving MoAI\'s innovative AI systems. Expert in building scalable, adaptable technologies that evolve with user needs and business requirements.',
     initials: 'G',
-    expertise: ['AI Architecture', 'Machine Learning', 'System Design']
+    expertise: ['AI Architecture', 'Workflow Automation', 'System Design']
   }
 ]
 
@@ -28,7 +28,7 @@ export default function Team() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Meet Our <span className="gradient-text">Founders</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
             The visionary minds behind MoAI, bringing together expertise in AI innovation and strategic business development.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
@@ -52,7 +52,7 @@ export default function Team() {
                   <p className="text-primary font-medium mb-4">{founder.role}</p>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-foreground/65 leading-relaxed mb-6">
                   {founder.bio}
                 </p>
 
@@ -70,7 +70,7 @@ export default function Team() {
                   </div>
                 </div>
 
-                <div className="flex justify-center space-x-3">
+                {/* <div className="flex justify-center space-x-3">
                   <Button size="sm" variant="outline" className="p-2">
                     <Linkedin className="h-4 w-4" />
                   </Button>
@@ -80,13 +80,13 @@ export default function Team() {
                   <Button size="sm" variant="outline" className="p-2">
                     <Mail className="h-4 w-4" />
                   </Button>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.6s' }}>
+        {/* <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.6s' }}>
           <Card className="inline-block p-8 shadow-medium max-w-2xl">
             <h3 className="text-xl font-semibold mb-4">Join Our Journey</h3>
             <p className="text-muted-foreground mb-6">
@@ -100,7 +100,7 @@ export default function Team() {
               Partner With Us
             </Button>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )
