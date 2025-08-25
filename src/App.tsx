@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 import RootLayout from "./layouts/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import EnterpriseAutomation from "./pages/enterprise";
+import EnterpriseAutomation from "./pages/EnterpriseAutomation";
 import "@n8n/chat/style.css";
 import { createChat } from "@n8n/chat";
 
