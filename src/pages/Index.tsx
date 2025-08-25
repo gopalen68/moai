@@ -1,23 +1,21 @@
-import Navbar from '@/components/Navbar'
+import { ScrollToHash } from '@/lib/utils'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Solutions from '@/components/Solutions'
 import Team from '@/components/Team'
-import Contact from '@/components/Contact'
 import ChatAI from '@/components/ChatAI'
-import Footer from '@/components/Footer'
+
+
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <ScrollToHash />
       <Hero />
       <About />
       <Solutions />
       <Team />
-      {/* <Contact /> */}
       <ChatAI />
-      <Footer />
     </div>
   );
 };

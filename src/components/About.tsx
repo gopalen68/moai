@@ -39,7 +39,7 @@ export default function About() {
           {/* Story Content */}
           <div className="slide-up" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-semibold mb-6 text-primary">Our Story</h3>
-            <div className="prose prose-lg text-foreground/65 space-y-4">
+            <div className="prose prose-lg text-foreground/65 space-y-4 text-justify">
               <p>
                 MoAi is a Mauritius-born technology company founded by Sendilen and Gopalen, 
                 with a bold vision to transform how artificial intelligence integrates into 
@@ -48,9 +48,9 @@ export default function About() {
               </p>
               <p>
                 Inspired by the simplicity and resilience of island life, and backed by a 
-                passion for purposeful design, MoAI builds technology that grows with you - 
+                passion for purposeful design, MoAi builds technology that grows with you - 
                 intuitive, scalable, and future-ready. Whether through enterprise automation, 
-                consumer solutions, or intelligent platforms, MoAI exists to turn complexity 
+                consumer solutions, or intelligent platforms, MoAi exists to turn complexity 
                 into clarity.
               </p>
             </div>

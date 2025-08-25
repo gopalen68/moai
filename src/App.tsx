@@ -5,8 +5,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import RootLayout from "./layouts/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import EnterpriseAutomation from "./pages/enterprise";
 import "@n8n/chat/style.css";
 import { createChat } from "@n8n/chat";
 
@@ -38,9 +40,15 @@ const App = () => {
           <Sonner />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
+              <Route element={<RootLayout />}>
+                <Route path="/" element={<Index />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/solutions/enterprise-automation" element={<EnterpriseAutomation />} />
+                <Route path="/solutions/consumer-ai-solutions" element={<EnterpriseAutomation />} />
+                <Route path="/solutions/intelligent-platforms" element={<EnterpriseAutomation />} />
+                <Route path="/solutions/custom-ai-development" element={<EnterpriseAutomation />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
             </Routes>
           </BrowserRouter>
         </TooltipProvider>
