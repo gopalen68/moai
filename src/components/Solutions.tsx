@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Building2, Smartphone, Network, Code } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -8,25 +9,29 @@ const solutions = [
     icon: Building2,
     title: 'Enterprise Automation',
     description: 'Streamline business processes with intelligent automation that adapts to your workflow patterns and scales with your organization.',
-    features: ['Process Optimization', 'Workflow Intelligence', 'Scalable Architecture']
+    features: ['Process Optimization', 'Workflow Intelligence', 'Scalable Architecture'],
+    url: '/solutions/enterprise-automation'
   },
   {
     icon: Smartphone,
     title: 'Consumer AI Solutions',
     description: 'Intuitive AI-powered applications that enhance daily life experiences with personalized, context-aware functionality.',
-    features: ['Personal Assistants', 'Smart Recommendations', 'Adaptive Interfaces']
+    features: ['Personal Assistants', 'Smart Recommendations', 'Adaptive Interfaces'],
+    url: '/solutions/consumer-ai-solutions'
   },
   {
     icon: Network,
     title: 'Intelligent Platforms',
     description: 'Comprehensive AI ecosystems that connect multiple touchpoints and provide unified, intelligent experiences.',
-    features: ['Data Integration', 'Cross-Platform Sync', 'Unified Analytics']
+    features: ['Data Integration', 'Cross-Platform Sync', 'Unified Analytics'],
+    url: '/solutions/intelligent-platforms'
   },
   {
     icon: Code,
     title: 'Custom AI Development',
     description: 'Tailored AI solutions designed specifically for your unique challenges and business requirements.',
-    features: ['Bespoke Solutions', 'Integration Support', 'Ongoing Optimization']
+    features: ['Bespoke Solutions', 'Integration Support', 'Ongoing Optimization'],
+    url: '/solutions/custom-ai-development'
   }
 ]
 
@@ -54,7 +59,7 @@ export default function Solutions() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {solutions.map((solution, index) => (
-            <Card 
+            <Card
               key={solution.title}
               className="slide-up shadow-soft hover:shadow-large transition-all duration-300 group"
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
@@ -71,7 +76,7 @@ export default function Solutions() {
                 <p className="text-foreground/65 mb-6 leading-relaxed">
                   {solution.description}
                 </p>
-                
+
                 <div className="space-y-2 mb-6">
                   {solution.features.map((feature) => (
                     <div key={feature} className="flex items-center">
@@ -81,28 +86,34 @@ export default function Solutions() {
                   ))}
                 </div>
 
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                >
-                  Learn More
-                </Button>
+                <Link to={solution.url}>
+                  <Button
+                    variant="outline"
+                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
+
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
+        {/* <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
           <Card className="inline-block p-8 shadow-medium">
             <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-foreground/65 mb-6">
               Let's discuss how MoAi can create the perfect AI solution for your needs.
             </p>
-            <Button size="lg" className="shadow-medium" onClick={() => scrollToSection('#contact')}>
-              Schedule a Consultation
-            </Button>
+            <Link to="/#contact">
+              <Button size="lg" className="shadow-medium">
+                Schedule a Consultation
+              </Button>
+            </Link>
+
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )

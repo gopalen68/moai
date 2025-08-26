@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import logo from '@/assets/moai_logo.png'
 
 const navigation = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Solutions', href: '#solutions' },
-  { name: 'Team', href: '#team' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Solutions', href: '/#solutions' },
+  { name: 'Team', href: '/#team' },
+  { name: 'Contact', href: '/#contact' },
 ]
 
 export default function Navbar() {
@@ -29,7 +30,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">MoAi</span>
-              <img src={logo} alt="" width="158" height="48" />
+              <img src={logo} alt="" width="168" height="48" />
             </a>
           </div>
 
@@ -37,22 +38,25 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navigation.map((item) => (
-                <button
+                <Link
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  to={item.href}
                   className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium"
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button onClick={() => scrollToSection('#contact')} className="shadow-medium">
-              Get Started
-            </Button>
+            <Link to="/#contact">
+              <Button className="shadow-medium text-white">
+                Get Started
+              </Button>
+            </Link>
+
           </div>
 
           {/* Mobile menu button */}
@@ -66,21 +70,23 @@ export default function Navbar() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col space-y-4 mt-8">
                   {navigation.map((item) => (
-                    <button
+                    <Link
                       key={item.name}
-                      onClick={() => scrollToSection(item.href)}
+                      to={item.href}
+                      onClick={() => setIsOpen(false)}
                       className="text-left text-lg font-medium text-muted-foreground hover:text-primary transition-colors duration-200 px-4 py-2"
                     >
                       {item.name}
-                    </button>
+                    </Link>
                   ))}
                   <div className="px-4 pt-4">
-                    <Button
-                      onClick={() => scrollToSection('#contact')}
+                    <Link
+                      to="/#contact"
+                      onClick={() => setIsOpen(false)}
                       className="w-full shadow-medium"
                     >
                       Get Started
-                    </Button>
+                    </Link>
                   </div>
                 </div>
               </SheetContent>
