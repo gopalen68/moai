@@ -30,7 +30,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">MoAi</span>
-              <img src={logo} alt="" width="158" height="48" />
+              <img src={logo} alt="" width="168" height="48" />
             </a>
           </div>
 
@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Link to="/#contact">
-              <Button className="shadow-medium">
+              <Button className="shadow-medium text-white">
                 Get Started
               </Button>
             </Link>

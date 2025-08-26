@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Solutions from '@/components/Solutions'
 import Team from '@/components/Team'
 import ChatAI from '@/components/ChatAI'
+import LogoCloud from '@/components/LogoCloud'
 
 
 
@@ -14,6 +15,7 @@ const Index = () => {
       <Hero />
       <About />
       <Solutions />
+      <LogoCloud />
       <Team />
       <ChatAI />
     </div>

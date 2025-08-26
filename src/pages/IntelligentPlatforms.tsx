@@ -8,54 +8,54 @@ import heroBg from '@/assets/hero-bg.jpg'
 const features = [
     {
         icon: Target,
-        title: 'Scalable Efficiency',
-        description: 'Adapt automation as your business grows—whether for small teams or enterprise-wide operations.'
+        title: 'Data Integration',
+        description: 'Seamlessly unify data from multiple sources into one ecosystem—ensuring consistency, accuracy, and accessibility across your business.'
     },
     {
         icon: Globe,
-        title: 'Smart Integration',
-        description: 'Seamlessly connect with existing systems (ERP, CRM, HR, Finance, IT).'
+        title: 'Cross-Platform Sync',
+        description: 'Enable real-time synchronization across devices, applications, and systems for a truly connected digital experience.'
     },
     {
         icon: Lightbulb,
-        title: 'Improved Accuracy',
-        description: 'Minimize manual errors with intelligent process handling.'
+        title: 'Unified Analytics',
+        description: 'Gain a single, intelligent view of your operations with analytics that aggregate and interpret data across all platforms.'
     },
     {
         icon: Users,
-        title: 'Employee Empowerment',
-        description: 'Free up your workforce to focus on higher-value strategic work.'
+        title: 'Scalable Ecosystem',
+        description: 'Build an adaptable AI ecosystem that grows with your needs and supports both current and future technologies.'
     }
 ]
 
 const usecases = [
     {
-        name: 'Finance & Accounting',
+        name: 'Enterprise Data Hub',
         description:
-            'Automate invoicing, streamline reconciliations, and stay compliant—without the manual workload.',
+            'Integrate data silos into a central hub that provides a unified source of truth for business decisions.',
         icon: LockIcon,
     },
     {
-        name: 'Human Resources',
+        name: 'Omnichannel Experience',
         description:
-            'Simplify onboarding, accelerate payroll, and automate leave requests so HR teams can focus on people, not paperwork.',
+            'Deliver consistent user experiences across mobile, web, and connected devices with cross-platform AI synchronization.',
         icon: CloudUpload,
     },
     {
-        name: 'IT & Operations',
+        name: 'Business Intelligence',
         description:
-            'Resolve tickets faster, monitor systems proactively, and manage assets effortlessly.',
+            'Leverage unified analytics to monitor KPIs, predict trends, and make data-driven strategic decisions.',
         icon: RefreshCw,
     },
     {
-        name: 'Customer Experience',
+        name: 'Collaboration & Productivity',
         description:
-            'Deliver instant responses with AI chatbots, personalize engagement, and keep customers updated in real time.',
+            'Connect teams and tools within a single intelligent platform, improving communication, efficiency, and outcomes.',
         icon: Fingerprint,
     },
 ]
 
-export default function EnterpriseAutomation() {
+export default function IntelligentPlatforms() {
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -79,15 +79,12 @@ export default function EnterpriseAutomation() {
                 <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                     <div className="fade-in">
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-                            <span className="">Enterprise Automation</span>
-                            {/* <br />
-                            <span className="">Built to Adapt.</span> */}
+                            <span className="">Intelligent Platforms</span>
                         </h1>
 
                         <p className="text-md sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            The integration of AI-driven workflows and intelligent
-                            process automation across an organization. It helps reduce repetitive tasks,
-                            improve efficiency, and allow your team to focus on innovation.
+                            Comprehensive AI ecosystems that connect multiple touchpoints and deliver
+                            unified, intelligent experiences across every channel.
                         </p>
                     </div>
                 </div>
@@ -100,7 +97,7 @@ export default function EnterpriseAutomation() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Key <span className="gradient-text">Benefits</span>
+                            Key <span className="gradient-text">Features</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -139,7 +136,7 @@ export default function EnterpriseAutomation() {
                                 How <span className="gradient-text">It Works</span>
                             </h2>
                             <p className="mt-6 text-xl/8 text-foreground/65">
-                                Automation doesn’t have to be complex. We make it simple with a three-step approach designed to fit your business.
+                                Intelligent Platforms unify data, applications, and insights into a single ecosystem that works seamlessly across your organization.
                             </p>
                             <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                         </div>
@@ -148,32 +145,26 @@ export default function EnterpriseAutomation() {
                                 <ul role="list" className="mt-8 space-y-8 text-center text-foreground/65">
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 1: Analyse Workflows</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 1: Connect & Integrate</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            We begin by uncovering the hidden inefficiencies in your processes.
-                                            From repetitive tasks to approval bottlenecks, we map out exactly
-                                            where automation can create the biggest impact.
+                                            Bring together data from multiple sources, systems, and applications into one cohesive ecosystem.
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 2: Automate with Intelligence</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 2: Sync Across Platforms</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Our AI-powered automation goes beyond simple task handling.
-                                            It learns from your patterns, adapts to your needs, and integrates
-                                            seamlessly with your existing systems—saving you time and boosting accuracy.
+                                            Enable real-time collaboration and synchronization across platforms, ensuring a connected digital environment.
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 3: Optimize & Scale</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 3: Analyze & Unify</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Your business isn’t static, and neither is our automation.
-                                            We continuously refine and expand your workflows so they
-                                            evolve with your organization—delivering more value as you grow.
+                                            Leverage unified analytics to interpret data, uncover insights, and create intelligent, actionable strategies.
                                         </p>
                                     </li>
                                 </ul>
@@ -211,9 +202,9 @@ export default function EnterpriseAutomation() {
             <section className="py-24">
                 <div className="max-w-5xl mx-auto  text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
                     <Card className=" p-8 shadow-medium">
-                        <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
+                        <h3 className="text-xl font-semibold mb-4">Ready to Build a Smarter Ecosystem?</h3>
                         <p className="text-foreground/65 mb-6">
-                            Let's discuss how MoAi can create the perfect AI solution for your needs.
+                            Let's explore how MoAi can design intelligent platforms that unify and power your business.
                         </p>
                         <Link to="/#contact">
                             <Button size="lg" className="shadow-medium text-white">

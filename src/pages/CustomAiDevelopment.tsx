@@ -8,54 +8,54 @@ import heroBg from '@/assets/hero-bg.jpg'
 const features = [
     {
         icon: Target,
-        title: 'Scalable Efficiency',
-        description: 'Adapt automation as your business grows—whether for small teams or enterprise-wide operations.'
+        title: 'Bespoke Solutions',
+        description: 'We design AI systems tailored to your unique business challenges—ensuring every solution is built with your goals in mind.'
     },
     {
         icon: Globe,
-        title: 'Smart Integration',
-        description: 'Seamlessly connect with existing systems (ERP, CRM, HR, Finance, IT).'
+        title: 'Integration Support',
+        description: 'Seamlessly integrate AI into your existing tools, workflows, and platforms with minimal disruption and maximum value.'
     },
     {
         icon: Lightbulb,
-        title: 'Improved Accuracy',
-        description: 'Minimize manual errors with intelligent process handling.'
+        title: 'Ongoing Optimization',
+        description: 'Our AI solutions evolve over time—continuously learning, adapting, and improving as your business grows.'
     },
     {
         icon: Users,
-        title: 'Employee Empowerment',
-        description: 'Free up your workforce to focus on higher-value strategic work.'
+        title: 'Collaborative Development',
+        description: 'We work hand-in-hand with your team to co-create AI that feels natural, intuitive, and perfectly aligned with your vision.'
     }
 ]
 
 const usecases = [
     {
-        name: 'Finance & Accounting',
+        name: 'Industry-Specific AI',
         description:
-            'Automate invoicing, streamline reconciliations, and stay compliant—without the manual workload.',
+            'Develop custom models for finance, healthcare, retail, manufacturing, and more—tailored to domain-specific needs.',
         icon: LockIcon,
     },
     {
-        name: 'Human Resources',
+        name: 'Workflow Automation',
         description:
-            'Simplify onboarding, accelerate payroll, and automate leave requests so HR teams can focus on people, not paperwork.',
+            'Create AI-powered workflows that automate repetitive tasks, approvals, and data handling unique to your operations.',
         icon: CloudUpload,
     },
     {
-        name: 'IT & Operations',
+        name: 'Intelligent Integrations',
         description:
-            'Resolve tickets faster, monitor systems proactively, and manage assets effortlessly.',
+            'Embed AI into your existing platforms—CRM, ERP, or customer portals—for smarter, context-aware performance.',
         icon: RefreshCw,
     },
     {
-        name: 'Customer Experience',
+        name: 'Long-Term Evolution',
         description:
-            'Deliver instant responses with AI chatbots, personalize engagement, and keep customers updated in real time.',
+            'Ensure your AI solution remains future-proof with continuous updates, performance monitoring, and optimization.',
         icon: Fingerprint,
     },
 ]
 
-export default function EnterpriseAutomation() {
+export default function CustomAIDevelopment() {
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -79,15 +79,11 @@ export default function EnterpriseAutomation() {
                 <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                     <div className="fade-in">
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-                            <span className="">Enterprise Automation</span>
-                            {/* <br />
-                            <span className="">Built to Adapt.</span> */}
+                            <span className="">Custom AI Development</span>
                         </h1>
 
                         <p className="text-md sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            The integration of AI-driven workflows and intelligent
-                            process automation across an organization. It helps reduce repetitive tasks,
-                            improve efficiency, and allow your team to focus on innovation.
+                            Tailored AI solutions designed specifically for your unique challenges and business requirements—built to deliver measurable impact.
                         </p>
                     </div>
                 </div>
@@ -100,7 +96,7 @@ export default function EnterpriseAutomation() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Key <span className="gradient-text">Benefits</span>
+                            Key <span className="gradient-text">Features</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -139,7 +135,7 @@ export default function EnterpriseAutomation() {
                                 How <span className="gradient-text">It Works</span>
                             </h2>
                             <p className="mt-6 text-xl/8 text-foreground/65">
-                                Automation doesn’t have to be complex. We make it simple with a three-step approach designed to fit your business.
+                                We create AI that’s as unique as your business—tailored, integrated, and continuously optimized for results.
                             </p>
                             <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                         </div>
@@ -148,32 +144,26 @@ export default function EnterpriseAutomation() {
                                 <ul role="list" className="mt-8 space-y-8 text-center text-foreground/65">
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 1: Analyse Workflows</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 1: Design Bespoke Solutions</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            We begin by uncovering the hidden inefficiencies in your processes.
-                                            From repetitive tasks to approval bottlenecks, we map out exactly
-                                            where automation can create the biggest impact.
+                                            We begin by understanding your goals and challenges, then design AI tailored to your exact needs.
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 2: Automate with Intelligence</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 2: Integrate Seamlessly</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Our AI-powered automation goes beyond simple task handling.
-                                            It learns from your patterns, adapts to your needs, and integrates
-                                            seamlessly with your existing systems—saving you time and boosting accuracy.
+                                            Our team ensures smooth integration with your existing systems and workflows for maximum efficiency.
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 3: Optimize & Scale</strong>
+                                            <strong className="font-semibold text-lg text-foreground">Step 3: Optimize Continuously</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Your business isn’t static, and neither is our automation.
-                                            We continuously refine and expand your workflows so they
-                                            evolve with your organization—delivering more value as you grow.
+                                            We don’t stop at deployment—your AI evolves with ongoing monitoring, fine-tuning, and enhancements.
                                         </p>
                                     </li>
                                 </ul>
@@ -211,9 +201,9 @@ export default function EnterpriseAutomation() {
             <section className="py-24">
                 <div className="max-w-5xl mx-auto  text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
                     <Card className=" p-8 shadow-medium">
-                        <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
+                        <h3 className="text-xl font-semibold mb-4">Ready to Build Your Custom AI?</h3>
                         <p className="text-foreground/65 mb-6">
-                            Let's discuss how MoAi can create the perfect AI solution for your needs.
+                            Let’s create AI solutions that are uniquely yours—crafted to solve your toughest challenges.
                         </p>
                         <Link to="/#contact">
                             <Button size="lg" className="shadow-medium text-white">

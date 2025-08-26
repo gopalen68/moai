@@ -100,7 +100,7 @@ export default function Solutions() {
           ))}
         </div>
 
-        <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
+        {/* <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
           <Card className="inline-block p-8 shadow-medium">
             <h3 className="text-xl font-semibold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-foreground/65 mb-6">
@@ -113,7 +113,7 @@ export default function Solutions() {
             </Link>
 
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   )
