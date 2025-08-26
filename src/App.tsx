@@ -5,8 +5,18 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import RootLayout from "./layouts/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import EnterpriseAutomation from "./pages/EnterpriseAutomation";
+import ConsumerAISolutions from "./pages/ConsumerAiSolutions";
+import IntelligentPlatforms from "./pages/IntelligentPlatforms";
+import CustomAIDevelopment from "./pages/CustomAiDevelopment";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
+import Blog from "./pages/Blog";
+import Support from "./pages/Support";
 import "@n8n/chat/style.css";
 import { createChat } from "@n8n/chat";
 
@@ -38,9 +48,20 @@ const App = () => {
           <Sonner />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Index />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
+              <Route element={<RootLayout />}>
+                <Route path="/" element={<Index />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/solutions/enterprise-automation" element={<EnterpriseAutomation />} />
+                <Route path="/solutions/consumer-ai-solutions" element={<ConsumerAISolutions />} />
+                <Route path="/solutions/intelligent-platforms" element={<IntelligentPlatforms />} />
+                <Route path="/solutions/custom-ai-development" element={<CustomAIDevelopment />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsAndConditions />} />
+                <Route path="/cookie-policy" element={<CookiePolicy />} />
+                <Route path="/blogs" element={<Blog />} />
+                <Route path="/support" element={<Support />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
             </Routes>
           </BrowserRouter>
         </TooltipProvider>

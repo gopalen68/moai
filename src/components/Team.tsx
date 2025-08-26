@@ -1,21 +1,25 @@
 import { Linkedin, Github, Mail } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import imgCgo from '@/assets/img_cgo_en.png'
+import imgCto from '@/assets/img_cto_en.png'
 
 const founders = [
   {
     name: 'Sendilen',
-    role: 'Co-Founder & CEO',
+    role: 'Co-Founder & CGO',
     bio: 'Visionary leader with a passion for transformative AI solutions. Focused on building technology that bridges the gap between complex AI capabilities and real-world applications.',
     initials: 'S',
+    photoUrl: imgCgo,
     expertise: ['AI Strategy', 'Product Vision', 'Business Development']
   },
   {
     name: 'Gopalen',
     role: 'Co-Founder & CTO',
-    bio: 'Technical architect driving MoAI\'s innovative AI systems. Expert in building scalable, adaptable technologies that evolve with user needs and business requirements.',
+    bio: 'Technical architect driving MoAi\'s innovative AI systems. Expert in building scalable, adaptable technologies that evolve with user needs and business requirements.',
     initials: 'G',
+    photoUrl: imgCto,
     expertise: ['AI Architecture', 'Workflow Automation', 'System Design']
   }
 ]
@@ -29,7 +33,7 @@ export default function Team() {
             Meet Our <span className="gradient-text">Founders</span>
           </h2>
           <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
-            The visionary minds behind MoAI, bringing together expertise in AI innovation and strategic business development.
+            The visionary minds behind MoAi, bringing together expertise in AI innovation and strategic business development.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
         </div>
@@ -44,6 +48,7 @@ export default function Team() {
               <CardContent className="p-8 text-center">
                 <div className="mb-6">
                   <Avatar className="w-24 h-24 mx-auto mb-4 ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all">
+                    <AvatarImage src={founder.photoUrl} alt={founder.name} className="rounded-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
                     <AvatarFallback className="text-2xl font-bold bg-gradient-primary text-white">
                       {founder.initials}
                     </AvatarFallback>

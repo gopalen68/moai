@@ -49,7 +49,7 @@ export default function Hero() {
             <Button 
               size="lg" 
               onClick={() => scrollToSection('#about')}
-              className="shadow-large group"
+              className="shadow-large group text-white"
             >
               Learn More
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
