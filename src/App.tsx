@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from '@vercel/analytics/react';
 import RootLayout from "./layouts/RootLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -64,6 +65,7 @@ const App = () => {
               </Route>
             </Routes>
           </BrowserRouter>
+          <Analytics />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>
