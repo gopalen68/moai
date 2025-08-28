@@ -1,6 +1,8 @@
 import { ScrollToHash } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export default function Blog() {
+    const { t } = useTranslation('comingsoon')
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -13,15 +15,15 @@ export default function Blog() {
                 <section className="mx-auto flex max-w-6xl flex-col items-center px-6 py-10 pb-24 text-center sm:py-16 md:py-20">
                     <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs tracking-wide text-white/70">
                         <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                        Something remarkable is on the way
+                        {t('blogs.badge')}
                     </span>
 
                     <h1 className="max-w-4xl text-4xl text-center font-bold tracking-tight sm:text-4xl md:text-5xl">
-                        Our <span className="bg-gradient-to-r from-fuchsia-300 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">Blogs</span> page is coming soon
+                        {t('blogs.title')} <span className="bg-gradient-to-r from-fuchsia-300 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">{t('blogs.title2')}</span> {t('blogs.title3')}
                     </h1>
 
                     <p className="mt-4 max-w-2xl text-balance text-white/80">
-                        We’re crafting a next-gen experience that’s faster, smarter, and beautifully simple.
+                        {t('blogs.subtitle')}
                     </p>
                 </section>
 

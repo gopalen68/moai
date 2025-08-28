@@ -1,0 +1,34 @@
+{
+  "title": "Our",
+  "title2": "Solutions",
+  "plainTitle": "Our Solutions",
+  "subtitle": "Comprehensive AI solutions designed to transform how you work, live, and innovate.",
+  "ctaLearnMore": "Learn More",
+
+  "cards": {
+    "enterpriseAutomation": {
+      "title": "Enterprise Automation",
+      "description": "Streamline business processes with intelligent automation that adapts to your workflow patterns and scales with your organization.",
+      "features": ["Process Optimization", "Workflow Intelligence", "Scalable Architecture"],
+      "url": "/solutions/enterprise-automation"
+    },
+    "consumerAISolutions": {
+      "title": "Consumer AI Solutions",
+      "description": "Intuitive AI-powered applications that enhance daily life experiences with personalized, context-aware functionality.",
+      "features": ["Personal Assistants", "Smart Recommendations", "Adaptive Interfaces"],
+      "url": "/solutions/consumer-ai-solutions"
+    },
+    "intelligentPlatforms": {
+      "title": "Intelligent Platforms",
+      "description": "Comprehensive AI ecosystems that connect multiple touchpoints and provide unified, intelligent experiences.",
+      "features": ["Data Integration", "Cross-Platform Sync", "Unified Analytics"],
+      "url": "/solutions/intelligent-platforms"
+    },
+    "customAIDevelopment": {
+      "title": "Custom AI Development",
+      "description": "Tailored AI solutions designed specifically for your unique challenges and business requirements.",
+      "features": ["Bespoke Solutions", "Integration Support", "Ongoing Optimization"],
+      "url": "/solutions/custom-ai-development"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Développement IA sur mesure",
+    "subtitle": "Des solutions d’IA adaptées spécifiquement à vos enjeux et à vos besoins métier — conçues pour générer un impact mesurable."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "title2": "Clés",
+    "items": {
+      "bespokeSolutions": {
+        "title": "Solutions sur mesure",
+        "description": "Nous concevons des systèmes d’IA adaptés à vos défis métier — chaque solution est pensée en fonction de vos objectifs."
+      },
+      "integrationSupport": {
+        "title": "Support d’intégration",
+        "description": "Intégrez l’IA à vos outils, workflows et plateformes existants sans friction, pour un maximum de valeur."
+      },
+      "ongoingOptimization": {
+        "title": "Optimisation continue",
+        "description": "Nos solutions d’IA évoluent dans le temps — elles apprennent, s’adaptent et s’améliorent au rythme de votre croissance."
+      },
+      "collaborativeDevelopment": {
+        "title": "Développement collaboratif",
+        "description": "Nous co-construisons avec vos équipes pour créer une IA naturelle, intuitive et parfaitement alignée à votre vision."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Comment",
+    "title2": "ça marche",
+    "subtitle": "Nous créons une IA unique à votre entreprise — sur mesure, intégrée et optimisée en continu pour des résultats tangibles.",
+    "steps": {
+      "step1": {
+        "title": "Étape 1 : Concevoir des solutions sur mesure",
+        "description": "Nous commençons par comprendre vos objectifs et vos défis, puis nous concevons une IA adaptée précisément à vos besoins."
+      },
+      "step2": {
+        "title": "Étape 2 : Intégrer sans friction",
+        "description": "Nous assurons une intégration fluide avec vos systèmes et workflows existants pour une efficacité maximale."
+      },
+      "step3": {
+        "title": "Étape 3 : Optimiser en continu",
+        "description": "Au-delà du déploiement, votre IA évolue grâce au monitoring, aux ajustements et aux améliorations régulières."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Cas",
+    "title2": "d’Utilisation",
+    "items": {
+      "industrySpecific": {
+        "name": "IA sectorielle",
+        "description": "Développez des modèles sur mesure pour la finance, la santé, le retail, l’industrie, et plus — adaptés aux besoins du domaine."
+      },
+      "workflowAutomation": {
+        "name": "Automatisation des workflows",
+        "description": "Créez des workflows pilotés par l’IA pour automatiser tâches répétitives, validations et traitements de données spécifiques à vos opérations."
+      },
+      "intelligentIntegrations": {
+        "name": "Intégrations intelligentes",
+        "description": "Intégrez l’IA à vos plateformes existantes — CRM, ERP ou portails clients — pour des performances contextuelles et plus intelligentes."
+      },
+      "longTermEvolution": {
+        "name": "Évolution à long terme",
+        "description": "Garantissez la pérennité de votre IA avec des mises à jour continues, un suivi de performance et des optimisations régulières."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à créer votre IA sur mesure ?",
+    "description": "Concevons des solutions d’IA uniques, pensées pour résoudre vos défis les plus complexes.",
+    "button": "Nous contacter",
+    "url": "/fr#contact"
+  }
+}

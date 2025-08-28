@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title": "Home",
+    "url": "/#home"
+  },
+  "about": {
+    "title": "About",
+    "url": "/#about"
+  },
+  "solutions": {
+    "title": "Solutions",
+    "url": "/#solutions"
+  },
+  "team": {
+    "title": "Team",
+    "url": "/#team"
+  },
+  "contact": {
+    "title": "Contact",
+    "url": "/#contact"
+  },
+  "getStarted": {
+    "title": "Get Started",
+    "url": "/#contact"
+  }
+}
+
+

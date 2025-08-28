@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Automatisation d’Entreprise",
+    "subtitle": "L’intégration de flux de travail pilotés par l’IA et de l’automatisation intelligente des processus dans toute l’organisation. Elle permet de réduire les tâches répétitives, d’améliorer l’efficacité et de libérer vos équipes pour qu’elles se concentrent sur l’innovation."
+  },
+  "benefits": {
+    "title": "Principaux",
+    "title2": "Avantages",
+    "features": {
+      "scalableEfficiency": {
+        "title": "Efficacité évolutive",
+        "description": "Adaptez l’automatisation à la croissance de votre entreprise — que ce soit pour de petites équipes ou des opérations à l’échelle de l’entreprise."
+      },
+      "smartIntegration": {
+        "title": "Intégration intelligente",
+        "description": "Connectez-vous facilement aux systèmes existants (ERP, CRM, RH, Finance, IT)."
+      },
+      "improvedAccuracy": {
+        "title": "Précision améliorée",
+        "description": "Réduisez les erreurs manuelles grâce à une gestion intelligente des processus."
+      },
+      "employeeEmpowerment": {
+        "title": "Autonomisation des employés",
+        "description": "Libérez vos équipes pour qu’elles se concentrent sur des tâches stratégiques à forte valeur ajoutée."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Comment",
+    "title2": "ça marche",
+    "subtitle": "L’automatisation n’a pas besoin d’être complexe. Nous la simplifions avec une approche en trois étapes conçue pour s’adapter à votre entreprise.",
+    "steps": {
+      "step1": {
+        "title": "Étape 1 : Analyser les flux de travail",
+        "description": "Nous commençons par identifier les inefficacités cachées dans vos processus. Des tâches répétitives aux goulots d’étranglement des validations, nous cartographions les points où l’automatisation peut avoir le plus d’impact."
+      },
+      "step2": {
+        "title": "Étape 2 : Automatiser intelligemment",
+        "description": "Notre automatisation alimentée par l’IA va au-delà du simple traitement de tâches. Elle apprend de vos habitudes, s’adapte à vos besoins et s’intègre sans effort à vos systèmes existants — vous faisant gagner du temps et améliorant la précision."
+      },
+      "step3": {
+        "title": "Étape 3 : Optimiser & Évoluer",
+        "description": "Votre entreprise n’est pas statique, et notre automatisation non plus. Nous affinons et développons continuellement vos flux afin qu’ils évoluent avec votre organisation — pour créer toujours plus de valeur."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Cas",
+    "title2": "d’Utilisation",
+    "items": {
+      "finance": {
+        "name": "Finance & Comptabilité",
+        "description": "Automatisez la facturation, simplifiez les rapprochements et restez conforme — sans charge manuelle."
+      },
+      "hr": {
+        "name": "Ressources Humaines",
+        "description": "Simplifiez l’intégration, accélérez la paie et automatisez les demandes de congés pour que les RH se concentrent sur l’humain, pas la paperasse."
+      },
+      "itOps": {
+        "name": "IT & Opérations",
+        "description": "Résolvez les tickets plus rapidement, surveillez les systèmes de manière proactive et gérez les actifs en toute simplicité."
+      },
+      "cx": {
+        "name": "Expérience Client",
+        "description": "Offrez des réponses instantanées avec des chatbots IA, personnalisez l’engagement et tenez vos clients informés en temps réel."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à transformer votre entreprise ?",
+    "description": "Discutons ensemble de la manière dont MoAi peut créer la solution IA idéale pour vos besoins.",
+    "button": "Nous contacter",
+    "url": "/fr#contact"
+  }
+}

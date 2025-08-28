@@ -1,0 +1,34 @@
+{
+  "title": "Nos",
+  "title2": "Solutions",
+  "plainTitle": "Nos Solutions",
+  "subtitle": "Des solutions IA complètes, conçues pour transformer votre manière de travailler, de vivre et d’innover.",
+  "ctaLearnMore": "En savoir plus",
+
+  "cards": {
+    "enterpriseAutomation": {
+      "title": "Automatisation d’Entreprise",
+      "description": "Rationalisez vos processus avec une automatisation intelligente qui s’adapte à vos flux et évolue avec votre organisation.",
+      "features": ["Optimisation des Processus", "Intelligence des Flux", "Architecture Scalable"],
+      "url": "/fr/solutions/automatisation-entreprise"
+    },
+    "consumerAISolutions": {
+      "title": "Solutions IA",
+      "description": "Des applications IA intuitives qui améliorent le quotidien grâce à des fonctionnalités personnalisées et contextuelles.",
+      "features": ["Assistants Personnels", "Recommandations Intelligentes", "Interfaces Adaptatives"],
+      "url": "/fr/solutions/solutions-ia-consommateur"
+    },
+    "intelligentPlatforms": {
+      "title": "Plateformes Intelligentes",
+      "description": "Des écosystèmes IA complets qui relient plusieurs points de contact et offrent des expériences unifiées et intelligentes.",
+      "features": ["Intégration des Données", "Synchronisation Multi-plateformes", "Analytique Unifiée"],
+      "url": "/fr/solutions/plateformes-intelligentes"
+    },
+    "customAIDevelopment": {
+      "title": "Développement IA Customisé",
+      "description": "Des solutions IA adaptées à vos défis spécifiques et à vos besoins métier.",
+      "features": ["Solutions Customisé", "Support d’Intégration", "Optimisation Continue"],
+      "url": "/fr/solutions/developpement-ia-customise"
+    }
+  }
+}

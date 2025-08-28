@@ -1,0 +1,75 @@
+{
+    "hero": {
+        "title": "Solutions IA pour les Consommateurs",
+        "subtitle": "Des applications intuitives basées sur l’IA qui enrichissent la vie quotidienne grâce à des fonctionnalités personnalisées et contextuelles — pour rester connecté, productif et inspiré."
+    },
+    "features": {
+        "title": "Fonctionnalités",
+        "title2": "Clés",
+        "items": {
+            "personalAssistants": {
+                "title": "Assistants personnels",
+                "description": "Restez organisé et productif avec des assistants IA qui gèrent vos plannings, rappels et tâches quotidiennes en toute simplicité."
+            },
+            "smartRecommendations": {
+                "title": "Recommandations intelligentes",
+                "description": "Recevez des suggestions personnalisées — pour vos achats, divertissements ou style de vie — adaptées à vos préférences et à votre contexte."
+            },
+            "adaptiveInterfaces": {
+                "title": "Interfaces adaptatives",
+                "description": "Profitez d’interfaces qui apprennent de vos habitudes, simplifiant la navigation et personnalisant vos interactions."
+            },
+            "enhancedDailyLiving": {
+                "title": "Vie quotidienne optimisée",
+                "description": "Découvrez des solutions IA conçues pour réduire les frictions du quotidien et rendre la technologie naturelle et intuitive."
+            }
+        }
+    },
+    "howItWorks": {
+        "title": "Comment",
+        "title2": "ça marche",
+        "subtitle": "Nous concevons une IA naturelle — des solutions qui comprennent, s’adaptent et vous assistent en temps réel.",
+        "steps": {
+            "step1": {
+                "title": "Étape 1 : Comprendre le contexte",
+                "description": "Notre IA commence par apprendre vos préférences, habitudes et routines — pour bâtir une compréhension personnalisée de votre mode de vie et de travail."
+            },
+            "step2": {
+                "title": "Étape 2 : Assister intelligemment",
+                "description": "De la gestion de tâches aux recommandations, l’IA vous soutient de manière proactive avec des solutions pertinentes et adaptées à vos besoins."
+            },
+            "step3": {
+                "title": "Étape 3 : S’adapter et évoluer",
+                "description": "Avec le temps, le système se perfectionne et s’adapte aux changements de votre quotidien pour rester utile, intuitif et toujours en avance sur vos attentes."
+            }
+        }
+    },
+    "useCases": {
+        "title": "Cas",
+        "title2": "d’Utilisation",
+        "items": {
+            "personalProductivity": {
+                "name": "Productivité personnelle",
+                "description": "Gérez vos tâches, réunions et rappels avec des assistants IA adaptés à votre mode de vie."
+            },
+            "entertainmentShopping": {
+                "name": "Divertissement & achats",
+                "description": "Découvrez de la musique, des émissions ou des produits qui vous plairont grâce à des moteurs de recommandation intelligents."
+            },
+            "smartDevicesHome": {
+                "name": "Objets connectés & maison",
+                "description": "Contrôlez et personnalisez vos appareils connectés grâce à des interfaces IA qui anticipent vos besoins."
+            },
+            "learningWellness": {
+                "name": "Apprentissage & bien-être",
+                "description": "Accédez à des ressources d’apprentissage, des conseils fitness et bien-être personnalisés — livrés au bon moment."
+            }
+        }
+    },
+    "cta": {
+        "title": "Prêt à enrichir votre quotidien ?",
+        "description": "Explorons ensemble comment MoAi peut concevoir des solutions IA intuitives, taillées pour vous.",
+        "button": "Nous contacter",
+        "url": "/fr#contact"
+    }
+}

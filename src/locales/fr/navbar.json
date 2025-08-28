@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "Accueil",
+    "url": "/fr#home"
+  },
+  "about": {
+    "title": "À propos",
+    "url": "/fr#about"
+  },
+  "solutions": {
+    "title": "Solutions",
+    "url": "/fr#solutions"
+  },
+  "team": {
+    "title": "Équipe",
+    "url": "/fr#team"
+  },
+  "contact": {
+    "title": "Contact",
+    "url": "/fr#contact"
+  },
+  "getStarted": {
+    "title": "Nous contacter",
+    "url": "/fr#contact"
+  }
+}

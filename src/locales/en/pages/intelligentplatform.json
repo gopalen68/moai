@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Intelligent Platforms",
+    "subtitle": "Comprehensive AI ecosystems that connect multiple touchpoints and deliver unified, intelligent experiences across every channel."
+  },
+  "features": {
+    "title": "Key",
+    "title2": "Features",
+    "items": {
+      "dataIntegration": {
+        "title": "Data Integration",
+        "description": "Seamlessly unify data from multiple sources into one ecosystem—ensuring consistency, accuracy, and accessibility across your business."
+      },
+      "crossPlatformSync": {
+        "title": "Cross-Platform Sync",
+        "description": "Enable real-time synchronization across devices, applications, and systems for a truly connected digital experience."
+      },
+      "unifiedAnalytics": {
+        "title": "Unified Analytics",
+        "description": "Gain a single, intelligent view of your operations with analytics that aggregate and interpret data across all platforms."
+      },
+      "scalableEcosystem": {
+        "title": "Scalable Ecosystem",
+        "description": "Build an adaptable AI ecosystem that grows with your needs and supports both current and future technologies."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How",
+    "title2": "It Works",
+    "subtitle": "Intelligent Platforms unify data, applications, and insights into a single ecosystem that works seamlessly across your organization.",
+    "steps": {
+      "connectIntegrate": {
+        "title": "Step 1: Connect & Integrate",
+        "description": "Bring together data from multiple sources, systems, and applications into one cohesive ecosystem."
+      },
+      "syncAcrossPlatforms": {
+        "title": "Step 2: Sync Across Platforms",
+        "description": "Enable real-time collaboration and synchronization across platforms, ensuring a connected digital environment."
+      },
+      "analyzeUnify": {
+        "title": "Step 3: Analyze & Unify",
+        "description": "Leverage unified analytics to interpret data, uncover insights, and create intelligent, actionable strategies."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Use",
+    "title2": "Cases",
+    "items": {
+      "enterpriseDataHub": {
+        "name": "Enterprise Data Hub",
+        "description": "Integrate data silos into a central hub that provides a unified source of truth for business decisions."
+      },
+      "omnichannelExperience": {
+        "name": "Omnichannel Experience",
+        "description": "Deliver consistent user experiences across mobile, web, and connected devices with cross-platform AI synchronization."
+      },
+      "businessIntelligence": {
+        "name": "Business Intelligence",
+        "description": "Leverage unified analytics to monitor KPIs, predict trends, and make data-driven strategic decisions."
+      },
+      "collaborationProductivity": {
+        "name": "Collaboration & Productivity",
+        "description": "Connect teams and tools within a single intelligent platform, improving communication, efficiency, and outcomes."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Build a Smarter Ecosystem?",
+    "description": "Let's explore how MoAi can design intelligent platforms that unify and power your business.",
+    "button": "Get Started",
+    "url": "/#contact"
+  }
+}

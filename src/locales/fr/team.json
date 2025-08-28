@@ -1,0 +1,29 @@
+{
+    "title": "Rencontrez Nos",
+    "title2": "Fondateurs",
+    "plainTitle": "Rencontrez Nos Fondateurs",
+    "subtitle": "Les esprits visionnaires derrière MoAi, réunissant expertise en innovation IA et développement stratégique des affaires.",
+    "founders": {
+        "sendilen": {
+            "name": "Sendilen",
+            "role": "Co-Fondateur & CGO",
+            "bio": "Entrepreneur visionnaire passionné par les solutions d’IA transformatrices. Axé sur la création de technologies qui comblent le fossé entre les capacités complexes de l’IA et les applications réelles.",
+            "expertise": [
+                "Stratégie IA",
+                "Vision Produit",
+                "Développement Commercial"
+            ]
+        },
+        "gopalen": {
+            "name": "Gopalen",
+            "role": "Co-Fondateur & CTO",
+            "bio": "Architecte technique dirigeant les systèmes IA innovants de MoAi. Expert dans la création de technologies évolutives et adaptables qui évoluent selon les besoins des utilisateurs et des entreprises.",
+            "expertise": [
+                "Architecture IA",
+                "Automatisation des Processus",
+                "Conception de Systèmes"
+            ]
+        }
+    },
+    "expertiseHeading": "Domaines d’Expertise"
+}
