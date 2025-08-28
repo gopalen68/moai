@@ -23,6 +23,14 @@ import enSolutions from '@/locales/en/solutions.json';
 import frSolutions from '@/locales/fr/solutions.json';
 import enTeam from '@/locales/en/team.json';
 import frTeam from '@/locales/fr/team.json';
+import enEnterpriseautomation from '@/locales/en/pages/enterpriseautomation.json';
+import frEnterpriseautomation from '@/locales/fr/pages/enterpriseautomation.json';
+import enCustomeraidevelopment from '@/locales/en/pages/customaidevelopment.json';
+import frCustomeraidevelopment from '@/locales/fr/pages/customaidevelopment.json';
+import enEnconsumeraisolutions from '@/locales/en/pages/consumeraisolutions.json';
+import frConsumeraisolutions from '@/locales/fr/pages/consumeraisolutions.json';
+import enIntelligentplatforms from '@/locales/en/pages/intelligentplatform.json';
+import frIntelligentplatforms from '@/locales/fr/pages/intelligentplatform.json';
 
 i18n
   // .use(ICU)
@@ -36,7 +44,22 @@ i18n
       caches: ['localStorage'],
       lookupQuerystring: 'lang',
     },
-    ns: ['common', 'hero', 'navbar', 'about', 'comingsoon', 'contact', 'footer', 'logocloud', 'solutions', 'team'],
+    ns: [
+      'common',
+      'hero',
+      'navbar',
+      'about',
+      'comingsoon',
+      'contact',
+      'footer',
+      'logocloud',
+      'solutions',
+      'team',
+      'enterpriseautomation',
+      'customeraidevelopment',
+      'consumeraisolutions',
+      'intelligentplatforms'
+    ],
     defaultNS: 'common',
     resources: {
       en: {
@@ -49,7 +72,11 @@ i18n
         footer: enFooter,
         logocloud: enLogocloud,
         solutions: enSolutions,
-        team: enTeam
+        team: enTeam,
+        enterpriseautomation: enEnterpriseautomation,
+        customeraidevelopment: enCustomeraidevelopment,
+        consumeraisolutions: enEnconsumeraisolutions,
+        intelligentplatforms: enIntelligentplatforms
       },
       fr: {
         common: frCommon,
@@ -61,7 +88,11 @@ i18n
         footer: frFooter,
         logocloud: frLogocloud,
         solutions: frSolutions,
-        team: frTeam
+        team: frTeam,
+        enterpriseautomation: frEnterpriseautomation,
+        customeraidevelopment: frCustomeraidevelopment,
+        consumeraisolutions: frConsumeraisolutions,
+        intelligentplatforms: frIntelligentplatforms
       },
     },
     interpolation: { escapeValue: false },

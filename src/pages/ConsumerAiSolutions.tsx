@@ -4,58 +4,57 @@ import { Target, Users, Lightbulb, Globe, ArrowRight, CloudUpload, LockIcon, Ref
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import heroBg from '@/assets/hero-bg.jpg'
-
-const features = [
-    {
-        icon: Target,
-        title: 'Personal Assistants',
-        description: 'Stay organized and productive with AI-driven assistants that manage schedules, reminders, and daily tasks effortlessly.'
-    },
-    {
-        icon: Globe,
-        title: 'Smart Recommendations',
-        description: 'Receive personalized suggestions—whether for shopping, entertainment, or lifestyle—based on your unique preferences and context.'
-    },
-    {
-        icon: Lightbulb,
-        title: 'Adaptive Interfaces',
-        description: 'Experience interfaces that learn from your behavior, simplifying navigation and tailoring interactions to your needs.'
-    },
-    {
-        icon: Users,
-        title: 'Enhanced Daily Living',
-        description: 'Enjoy AI solutions designed to reduce friction in everyday routines, making technology feel natural and intuitive.'
-    }
-]
-
-const usecases = [
-    {
-        name: 'Personal Productivity',
-        description:
-            'Manage tasks, meetings, and reminders with AI-powered assistants that adapt to your lifestyle.',
-        icon: LockIcon,
-    },
-    {
-        name: 'Entertainment & Shopping',
-        description:
-            'Discover music, shows, or products you’ll love through intelligent recommendation engines.',
-        icon: CloudUpload,
-    },
-    {
-        name: 'Smart Devices & Home',
-        description:
-            'Control and personalize connected devices with adaptive AI interfaces that anticipate your needs.',
-        icon: RefreshCw,
-    },
-    {
-        name: 'Learning & Wellness',
-        description:
-            'Access personalized learning resources, fitness tips, and wellness guidance—delivered at the right moment.',
-        icon: Fingerprint,
-    },
-]
+import { useTranslation } from 'react-i18next';
 
 export default function ConsumerAISolutions() {
+    const { t } = useTranslation('consumeraisolutions')
+
+    const features = [
+        {
+            icon: Target,
+            title: t('features.items.personalAssistants.title'),
+            description: t('features.items.personalAssistants.description')
+        },
+        {
+            icon: Globe,
+            title: t('features.items.smartRecommendations.title'),
+            description: t('features.items.smartRecommendations.description')
+        },
+        {
+            icon: Lightbulb,
+            title: t('features.items.adaptiveInterfaces.title'),
+            description: t('features.items.adaptiveInterfaces.description')
+        },
+        {
+            icon: Users,
+            title: t('features.items.enhancedDailyLiving.title'),
+            description: t('features.items.enhancedDailyLiving.description')
+        }
+    ]
+
+    const usecases = [
+        {
+            name: t('useCases.items.personalProductivity.name'),
+            description: t('useCases.items.personalProductivity.description'),
+            icon: LockIcon,
+        },
+        {
+            name: t('useCases.items.entertainmentShopping.name'),
+            description: t('useCases.items.entertainmentShopping.description'),
+            icon: CloudUpload,
+        },
+        {
+            name: t('useCases.items.smartDevicesHome.name'),
+            description: t('useCases.items.smartDevicesHome.description'),
+            icon: RefreshCw,
+        },
+        {
+            name: t('useCases.items.learningWellness.name'),
+            description: t('useCases.items.learningWellness.description'),
+            icon: Fingerprint,
+        },
+    ]
+
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -79,12 +78,11 @@ export default function ConsumerAISolutions() {
                 <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                     <div className="fade-in">
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-                            <span className="">Consumer AI Solutions</span>
+                            <span className="">{t('hero.title')}</span>
                         </h1>
 
                         <p className="text-md sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Intuitive AI-powered applications that enhance daily life with personalized,
-                            context-aware functionality—helping you stay connected, productive, and inspired.
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </div>
@@ -97,7 +95,7 @@ export default function ConsumerAISolutions() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Key <span className="gradient-text">Features</span>
+                            {t('features.title')} <span className="gradient-text">{t('features.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -133,10 +131,10 @@ export default function ConsumerAISolutions() {
                     <div className="mx-auto">
                         <div className="text-center mb-16 slide-up">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                                How <span className="gradient-text">It Works</span>
+                                {t('howItWorks.title')} <span className="gradient-text">{t('howItWorks.title2')}</span>
                             </h2>
                             <p className="mt-6 text-xl/8 text-foreground/65">
-                                We design AI that feels natural—solutions that understand, adapt, and assist in real-time.
+                                {t('howItWorks.subtitle')}
                             </p>
                             <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                         </div>
@@ -145,29 +143,26 @@ export default function ConsumerAISolutions() {
                                 <ul role="list" className="mt-8 space-y-8 text-center text-foreground/65">
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 1: Understand Context</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step1.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Our AI begins by learning your preferences, patterns, and routines—building a
-                                            personalized understanding of how you live and work.
+                                            {t('howItWorks.steps.step1.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 2: Assist Intelligently</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step2.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            From managing tasks to making recommendations, the AI proactively supports you,
-                                            offering solutions that are timely and relevant to your needs.
+                                            {t('howItWorks.steps.step2.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 3: Adapt & Evolve</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step3.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Over time, the system refines itself, adapting to changes in your lifestyle so
-                                            it remains useful, intuitive, and ahead of your expectations.
+                                            {t('howItWorks.steps.step3.description')}
                                         </p>
                                     </li>
                                 </ul>
@@ -181,7 +176,7 @@ export default function ConsumerAISolutions() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Use <span className="gradient-text">Cases</span>
+                            {t('useCases.title')} <span className="gradient-text">{t('useCases.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -205,13 +200,13 @@ export default function ConsumerAISolutions() {
             <section className="py-24">
                 <div className="max-w-5xl mx-auto  text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
                     <Card className=" p-8 shadow-medium">
-                        <h3 className="text-xl font-semibold mb-4">Ready to Enhance Your Daily Life?</h3>
+                        <h3 className="text-xl font-semibold mb-4">{t('cta.title')}</h3>
                         <p className="text-foreground/65 mb-6">
-                            Let's explore how MoAi can craft intuitive AI solutions tailored just for you.
+                            {t('cta.description')}
                         </p>
-                        <Link to="/#contact">
+                        <Link to={t('cta.url')}>
                             <Button size="lg" className="shadow-medium text-white">
-                                Get Started
+                                {t('cta.button')}
                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>

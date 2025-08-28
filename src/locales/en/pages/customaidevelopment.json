@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Custom AI Development",
+    "subtitle": "Tailored AI solutions designed specifically for your unique challenges and business requirements—built to deliver measurable impact."
+  },
+  "features": {
+    "title": "Key",
+    "title2": "Features",
+    "items": {
+      "bespokeSolutions": {
+        "title": "Bespoke Solutions",
+        "description": "We design AI systems tailored to your unique business challenges—ensuring every solution is built with your goals in mind."
+      },
+      "integrationSupport": {
+        "title": "Integration Support",
+        "description": "Seamlessly integrate AI into your existing tools, workflows, and platforms with minimal disruption and maximum value."
+      },
+      "ongoingOptimization": {
+        "title": "Ongoing Optimization",
+        "description": "Our AI solutions evolve over time—continuously learning, adapting, and improving as your business grows."
+      },
+      "collaborativeDevelopment": {
+        "title": "Collaborative Development",
+        "description": "We work hand-in-hand with your team to co-create AI that feels natural, intuitive, and perfectly aligned with your vision."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How",
+    "title2": "It Works",
+    "subtitle": "We create AI that’s as unique as your business—tailored, integrated, and continuously optimized for results.",
+    "steps": {
+      "step1": {
+        "title": "Step 1: Design Bespoke Solutions",
+        "description": "We begin by understanding your goals and challenges, then design AI tailored to your exact needs."
+      },
+      "step2": {
+        "title": "Step 2: Integrate Seamlessly",
+        "description": "Our team ensures smooth integration with your existing systems and workflows for maximum efficiency."
+      },
+      "step3": {
+        "title": "Step 3: Optimize Continuously",
+        "description": "We don’t stop at deployment—your AI evolves with ongoing monitoring, fine-tuning, and enhancements."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Use",
+    "title2": "Cases",
+    "items": {
+      "industrySpecific": {
+        "name": "Industry-Specific AI",
+        "description": "Develop custom models for finance, healthcare, retail, manufacturing, and more—tailored to domain-specific needs."
+      },
+      "workflowAutomation": {
+        "name": "Workflow Automation",
+        "description": "Create AI-powered workflows that automate repetitive tasks, approvals, and data handling unique to your operations."
+      },
+      "intelligentIntegrations": {
+        "name": "Intelligent Integrations",
+        "description": "Embed AI into your existing platforms—CRM, ERP, or customer portals—for smarter, context-aware performance."
+      },
+      "longTermEvolution": {
+        "name": "Long-Term Evolution",
+        "description": "Ensure your AI solution remains future-proof with continuous updates, performance monitoring, and optimization."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Build Your Custom AI?",
+    "description": "Let’s create AI solutions that are uniquely yours—crafted to solve your toughest challenges.",
+    "button": "Get Started",
+    "url": "/#contact"
+  }
+}
