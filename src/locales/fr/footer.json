@@ -54,17 +54,17 @@
     },
     "legal": {
         "privacy": {
-            "title": "Politique de confidentialité",
-            "url": "/fr/politique-de-confidentialite"
+            "title": "Privacy Policy",
+            "url": "/privacy-policy"
         },
         "terms": {
-            "title": "Conditions d’utilisation",
-            "url": "/fr/conditions-d-utilisation"
+            "title": "Terms of Service",
+            "url": "/terms-of-service"
         },
         "cookies": {
-            "title": "Politique relative aux cookies",
-            "url": "/fr/politique-de-cookies"
+            "title": "Cookie Policy",
+            "url": "/cookie-policy"
         },
-        "copyright": "MoAi. Tous droits réservés."
+        "copyright": "MoAi. All rights reserved."
     }
 }
