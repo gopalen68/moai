@@ -1,41 +1,26 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Building2, Smartphone, Network, Code } from 'lucide-react'
+import { Building2, Smartphone, Network, Code, Box } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { useTranslation } from 'react-i18next'
 
-const solutions = [
-  {
-    icon: Building2,
-    title: 'Enterprise Automation',
-    description: 'Streamline business processes with intelligent automation that adapts to your workflow patterns and scales with your organization.',
-    features: ['Process Optimization', 'Workflow Intelligence', 'Scalable Architecture'],
-    url: '/solutions/enterprise-automation'
-  },
-  {
-    icon: Smartphone,
-    title: 'Consumer AI Solutions',
-    description: 'Intuitive AI-powered applications that enhance daily life experiences with personalized, context-aware functionality.',
-    features: ['Personal Assistants', 'Smart Recommendations', 'Adaptive Interfaces'],
-    url: '/solutions/consumer-ai-solutions'
-  },
-  {
-    icon: Network,
-    title: 'Intelligent Platforms',
-    description: 'Comprehensive AI ecosystems that connect multiple touchpoints and provide unified, intelligent experiences.',
-    features: ['Data Integration', 'Cross-Platform Sync', 'Unified Analytics'],
-    url: '/solutions/intelligent-platforms'
-  },
-  {
-    icon: Code,
-    title: 'Custom AI Development',
-    description: 'Tailored AI solutions designed specifically for your unique challenges and business requirements.',
-    features: ['Bespoke Solutions', 'Integration Support', 'Ongoing Optimization'],
-    url: '/solutions/custom-ai-development'
-  }
-]
+type CardKey =
+  | 'enterpriseAutomation'
+  | 'consumerAISolutions'
+  | 'intelligentPlatforms'
+  | 'customAIDevelopment'
+
+// 1) Map stable keys -> icon components (language-agnostic)
+const ICONS: Record<CardKey, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  enterpriseAutomation: Building2,
+  consumerAISolutions: Smartphone,
+  intelligentPlatforms: Network,
+  customAIDevelopment: Code,
+}
 
 export default function Solutions() {
+  const { t } = useTranslation('solutions')
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToSection = (href: string) => {
@@ -44,60 +29,75 @@ export default function Solutions() {
     setIsOpen(false)
   }
 
+  const cards: CardKey[] = [
+    'enterpriseAutomation',
+    'consumerAISolutions',
+    'intelligentPlatforms',
+    'customAIDevelopment',
+  ]
+
   return (
     <section id="solutions" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 slide-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Our <span className="gradient-text">Solutions</span>
+            {t('title')} <span className="gradient-text">{t('title2')}</span>
           </h2>
           <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
-            Comprehensive AI solutions designed to transform how you work, live, and innovate.
+            {t('subtitle')}
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {solutions.map((solution, index) => (
-            <Card
-              key={solution.title}
-              className="slide-up shadow-soft hover:shadow-large transition-all duration-300 group"
-              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
-            >
-              <CardHeader className="pb-4">
-                <div className="flex items-center mb-4">
-                  <div className="p-3 bg-primary/10 rounded-xl mr-4 group-hover:bg-primary/20 transition-colors">
-                    <solution.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl">{solution.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/65 mb-6 leading-relaxed">
-                  {solution.description}
-                </p>
+          {cards.map((key, index) => {
+            const title = t(`cards.${key}.title`)
+            const description = t(`cards.${key}.description`)
+            const features = t(`cards.${key}.features`, { returnObjects: true }) as string[]
+            const url = t(`cards.${key}.url`)
 
-                <div className="space-y-2 mb-6">
-                  {solution.features.map((feature) => (
-                    <div key={feature} className="flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      <span className="text-sm text-foreground/65">{feature}</span>
+            const Icon = ICONS[key] ?? Box
+            return (
+              <Card
+                key={key}
+                className="slide-up shadow-soft hover:shadow-large transition-all duration-300 group"
+                style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-center mb-4">
+                    <div className="p-3 bg-primary/10 rounded-xl mr-4 group-hover:bg-primary/20 transition-colors">
+                      <Icon className="h-8 w-8 text-primary" />
                     </div>
-                  ))}
-                </div>
+                    <CardTitle className="text-xl">{title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-foreground/65 mb-6 leading-relaxed">
+                    {description}
+                  </p>
 
-                <Link to={solution.url}>
-                  <Button
-                    variant="outline"
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  >
-                    Learn More
-                  </Button>
-                </Link>
+                  <div className="space-y-2 mb-6">
+                    {features.map((feature) => (
+                      <div key={feature} className="flex items-center">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                        <span className="text-sm text-foreground/65">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
 
-              </CardContent>
-            </Card>
-          ))}
+                  <Link to={url}>
+                    <Button
+                      variant="outline"
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                    >
+                      {t('ctaLearnMore')}
+                    </Button>
+                  </Link>
+
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
 
         {/* <div className="text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>

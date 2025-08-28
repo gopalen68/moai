@@ -1,23 +1,25 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-const footerLinks = {
-  Company: [
-    { name: 'About Us', href: '/#about' },
-    { name: 'Contact', href: '/#contact' }
-  ],
-  Solutions: [
-    { name: 'Enterprise Automation', href: '/solutions/enterprise-automation' },
-    { name: 'Consumer AI Solutions', href: '/solutions/consumer-ai-solutions' },
-    { name: 'Intelligent Platforms', href: '/solutions/intelligent-platforms' },
-    { name: 'Custom AI Development', href: '/solutions/custom-ai-development' }
-  ],
-  Resources: [
-    { name: 'Blog', href: '/blogs' },
-    { name: 'Support', href: '/support' }
-  ]
-}
-
 export default function Footer() {
+  const { t } = useTranslation('footer')
+
+  const footerLinks = {
+    [t('sections.company.title')]: [
+      { name: t('sections.company.links.about.title'), href: t('sections.company.links.about.url') },
+      { name: t('sections.company.links.contact.title'), href: t('sections.company.links.contact.url') }
+    ],
+    [t('sections.solutions.title')]: [
+      { name: t('sections.solutions.links.enterpriseAutomation.title'), href: t('sections.solutions.links.enterpriseAutomation.url') },
+      { name: t('sections.solutions.links.consumerAISolutions.title'), href: t('sections.solutions.links.consumerAISolutions.url') },
+      { name: t('sections.solutions.links.intelligentPlatforms.title'), href: t('sections.solutions.links.intelligentPlatforms.url') },
+      { name: t('sections.solutions.links.customAIDevelopment.title'), href: t('sections.solutions.links.customAIDevelopment.url') }
+    ],
+    [t('sections.resources.title')]: [
+      { name: t('sections.resources.links.blog.title'), href: t('sections.resources.links.blog.url') },
+      { name: t('sections.resources.links.support.title'), href: t('sections.resources.links.support.url') }
+    ]
+  }
 
   return (
     <footer className="bg-card border-t border-border">
@@ -25,9 +27,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">MoAi</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">{t('brand.title')}</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Transforming daily life and business with adaptable AI-powered systems that grow with you.
+              {t('brand.tagline')}
             </p>
           </div>
 
@@ -55,17 +57,17 @@ export default function Footer() {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              © {new Date().getFullYear()} MoAi. All rights reserved.
+              © {new Date().getFullYear()} {t('legal.copyright')}
             </p>
             <div className="flex space-x-6">
-              <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Privacy Policy
+              <Link to={t('legal.privacy.url')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('legal.privacy.title')}
               </Link>
-              <Link to="terms-of-service" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Terms of Service
+              <Link to={t('legal.terms.url')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('legal.terms.title')}
               </Link>
-              <Link to="cookie-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Cookie Policy
+              <Link to={t('legal.cookies.url')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                {t('legal.cookies.title')}
               </Link>
             </div>
           </div>

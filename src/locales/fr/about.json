@@ -1,0 +1,26 @@
+{
+  "title": "À propos de",
+  "title2": "MoAi",
+  "ourStory": "Notre Histoire",
+  "paragraph1": "MoAi est une entreprise technologique née à l’île Maurice, fondée par Sendilen et Gopalen, avec une vision ambitieuse de transformer la manière dont l’intelligence artificielle s’intègre dans la vie quotidienne et les affaires. Nous développons des systèmes et outils d’automatisation basés sur l’IA, à la fois intelligents et profondément adaptables aux environnements changeants.",
+  "paragraph2": "Inspirée par la simplicité et la résilience de la vie insulaire, et animée par une passion pour le design utile, MoAi conçoit une technologie qui évolue avec vous — intuitive, évolutive et prête pour l’avenir. Qu’il s’agisse d’automatisation d’entreprise, de solutions grand public ou de plateformes intelligentes, MoAi existe pour transformer la complexité en clarté.",
+
+  "features": {
+    "purposefulDesign": {
+      "title": "Conception Intentionnelle",
+      "description": "Chaque solution est conçue avec soin, en mettant l’accent sur l’impact réel et les besoins des utilisateurs."
+    },
+    "adaptableSystems": {
+      "title": "Systèmes Adaptables",
+      "description": "Notre IA évolue avec vous, apprenant et s’adaptant aux besoins changeants."
+    },
+    "smartInnovation": {
+      "title": "Innovation Intelligente",
+      "description": "Une technologie de pointe qui simplifie la complexité et enrichit l’expérience quotidienne."
+    },
+    "globalVision": {
+      "title": "Vision Globale",
+      "description": "Une innovation née sur une île avec une perspective mondiale, apportant de la clarté aux défis universels."
+    }
+  }
+}

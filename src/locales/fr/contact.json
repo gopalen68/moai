@@ -1,0 +1,42 @@
+{
+    "title": "Prenez",
+    "title2": "Contact",
+    "subtitle": "Prêt à transformer votre entreprise avec l’IA ? Contactez-nous instantanément—cliquez sur la bulle de chat en bas à droite et commencez la conversation.",
+    "steps": {
+        "clickBubble": {
+            "title": "1) Cliquez sur la bulle de chat",
+            "desc": "Repérez la bulle bleue en bas à droite. Elle ouvre notre assistant—sans formulaires, sans attente."
+        },
+        "shareRequirements": {
+            "title": "2) Partagez vos besoins",
+            "desc": "Indiquez vos objectifs, intégrations, calendrier et budget. Nous gardons la discussion ciblée et pertinente."
+        },
+        "followUp": {
+            "title": "3) Nous faisons le suivi",
+            "desc": "L’assistant envoie un résumé à l’équipe MoAi par e-mail. Un humain prend le relais—pas de devis dans le chat."
+        }
+    },
+    "whatWeHelp": "Ce que nous proposons",
+    "helpTags": [
+        "Systèmes & automatisation IA",
+        "Orchestration des workflows",
+        "Intelligence e-commerce",
+        "Sites web & plateformes",
+        "Conseil & stratégie"
+    ],
+    "whatToPrepare": "Ce qu’il faut préparer",
+    "prepareList": [
+        "Objectifs & indicateurs de succès",
+        "Intégrations (outils, sources de données)",
+        "Calendrier (démarrage/lancement idéal)",
+        "Fourchette budgétaire & devise"
+    ],
+    "policyNote": "Uniquement en lien avec les services MoAi. Nous pouvons demander une fourchette budgétaire, mais nous ne fournissons pas de devis dans le chat.",
+    "policyBadges": {
+        "noForms": "Pas de formulaires—juste un chat",
+        "humanFollowup": "Suivi humain"
+    },
+    "footerHint": "Repérez la",
+    "footerHint2": "bulle de chat bleue",
+    "footerHint3": "en bas à droite pour commencer."
+}

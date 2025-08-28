@@ -1,0 +1,70 @@
+{
+    "brand": {
+        "title": "MoAi",
+        "tagline": "Transformer le quotidien et l’entreprise avec des systèmes IA adaptatifs qui évoluent avec vous."
+    },
+    "sections": {
+        "company": {
+            "title": "Entreprise",
+            "links": {
+                "about": {
+                    "title": "À propos",
+                    "url": "/fr/#about"
+                },
+                "contact": {
+                    "title": "Contact",
+                    "url": "/fr/#contact"
+                }
+            }
+        },
+        "solutions": {
+            "title": "Solutions",
+            "links": {
+                "enterpriseAutomation": {
+                    "title": "Automatisation d’entreprise",
+                    "url": "/fr/solutions/automatisation-entreprise"
+                },
+                "consumerAISolutions": {
+                    "title": "Solutions IA pour consommateurs",
+                    "url": "/fr/solutions/solutions-ia-consommateur"
+                },
+                "intelligentPlatforms": {
+                    "title": "Plateformes intelligentes",
+                    "url": "/fr/solutions/plateformes-intelligentes"
+                },
+                "customAIDevelopment": {
+                    "title": "Développement IA Customisé",
+                    "url": "/fr/solutions/developpement-ia-customise"
+                }
+            }
+        },
+        "resources": {
+            "title": "Ressources",
+            "links": {
+                "blog": {
+                    "title": "Blog",
+                    "url": "/fr/blogs"
+                },
+                "support": {
+                    "title": "Support",
+                    "url": "/fr/support"
+                }
+            }
+        }
+    },
+    "legal": {
+        "privacy": {
+            "title": "Politique de confidentialité",
+            "url": "/fr/politique-de-confidentialite"
+        },
+        "terms": {
+            "title": "Conditions d’utilisation",
+            "url": "/fr/conditions-d-utilisation"
+        },
+        "cookies": {
+            "title": "Politique relative aux cookies",
+            "url": "/fr/politique-de-cookies"
+        },
+        "copyright": "MoAi. Tous droits réservés."
+    }
+}
