@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Enterprise Automation",
+    "subtitle": "The integration of AI-driven workflows and intelligent process automation across an organization. It helps reduce repetitive tasks, improve efficiency, and allow your team to focus on innovation."
+  },
+  "benefits": {
+    "title": "Key",
+    "title2": "Benefits",
+    "features": {
+      "scalableEfficiency": {
+        "title": "Scalable Efficiency",
+        "description": "Adapt automation as your business grows—whether for small teams or enterprise-wide operations."
+      },
+      "smartIntegration": {
+        "title": "Smart Integration",
+        "description": "Seamlessly connect with existing systems (ERP, CRM, HR, Finance, IT)."
+      },
+      "improvedAccuracy": {
+        "title": "Improved Accuracy",
+        "description": "Minimize manual errors with intelligent process handling."
+      },
+      "employeeEmpowerment": {
+        "title": "Employee Empowerment",
+        "description": "Free up your workforce to focus on higher-value strategic work."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How",
+    "title2": "It Works",
+    "subtitle": "Automation doesn’t have to be complex. We make it simple with a three-step approach designed to fit your business.",
+    "steps": {
+      "step1": {
+        "title": "Step 1: Analyse Workflows",
+        "description": "We begin by uncovering the hidden inefficiencies in your processes. From repetitive tasks to approval bottlenecks, we map out exactly where automation can create the biggest impact."
+      },
+      "step2": {
+        "title": "Step 2: Automate with Intelligence",
+        "description": "Our AI-powered automation goes beyond simple task handling. It learns from your patterns, adapts to your needs, and integrates seamlessly with your existing systems—saving you time and boosting accuracy."
+      },
+      "step3": {
+        "title": "Step 3: Optimize & Scale",
+        "description": "Your business isn’t static, and neither is our automation. We continuously refine and expand your workflows so they evolve with your organization—delivering more value as you grow."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Use",
+    "title2": "Cases",
+    "items": {
+      "finance": {
+        "name": "Finance & Accounting",
+        "description": "Automate invoicing, streamline reconciliations, and stay compliant—without the manual workload."
+      },
+      "hr": {
+        "name": "Human Resources",
+        "description": "Simplify onboarding, accelerate payroll, and automate leave requests so HR teams can focus on people, not paperwork."
+      },
+      "itOps": {
+        "name": "IT & Operations",
+        "description": "Resolve tickets faster, monitor systems proactively, and manage assets effortlessly."
+      },
+      "cx": {
+        "name": "Customer Experience",
+        "description": "Deliver instant responses with AI chatbots, personalize engagement, and keep customers updated in real time."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how MoAi can create the perfect AI solution for your needs.",
+    "button": "Get Started",
+    "url": "/#contact"
+  }
+}

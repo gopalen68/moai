@@ -4,58 +4,57 @@ import { Target, Users, Lightbulb, Globe, ArrowRight, CloudUpload, LockIcon, Ref
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import heroBg from '@/assets/hero-bg.jpg'
-
-const features = [
-    {
-        icon: Target,
-        title: 'Data Integration',
-        description: 'Seamlessly unify data from multiple sources into one ecosystem—ensuring consistency, accuracy, and accessibility across your business.'
-    },
-    {
-        icon: Globe,
-        title: 'Cross-Platform Sync',
-        description: 'Enable real-time synchronization across devices, applications, and systems for a truly connected digital experience.'
-    },
-    {
-        icon: Lightbulb,
-        title: 'Unified Analytics',
-        description: 'Gain a single, intelligent view of your operations with analytics that aggregate and interpret data across all platforms.'
-    },
-    {
-        icon: Users,
-        title: 'Scalable Ecosystem',
-        description: 'Build an adaptable AI ecosystem that grows with your needs and supports both current and future technologies.'
-    }
-]
-
-const usecases = [
-    {
-        name: 'Enterprise Data Hub',
-        description:
-            'Integrate data silos into a central hub that provides a unified source of truth for business decisions.',
-        icon: LockIcon,
-    },
-    {
-        name: 'Omnichannel Experience',
-        description:
-            'Deliver consistent user experiences across mobile, web, and connected devices with cross-platform AI synchronization.',
-        icon: CloudUpload,
-    },
-    {
-        name: 'Business Intelligence',
-        description:
-            'Leverage unified analytics to monitor KPIs, predict trends, and make data-driven strategic decisions.',
-        icon: RefreshCw,
-    },
-    {
-        name: 'Collaboration & Productivity',
-        description:
-            'Connect teams and tools within a single intelligent platform, improving communication, efficiency, and outcomes.',
-        icon: Fingerprint,
-    },
-]
+import { useTranslation } from 'react-i18next';
 
 export default function IntelligentPlatforms() {
+    const { t } = useTranslation('intelligentplatforms')
+
+    const features = [
+        {
+            icon: Target,
+            title: t('features.items.dataIntegration.title'),
+            description: t('features.items.dataIntegration.description'),
+        },
+        {
+            icon: Globe,
+            title: t('features.items.crossPlatformSync.title'),
+            description: t('features.items.crossPlatformSync.description'),
+        },
+        {
+            icon: Lightbulb,
+            title: t('features.items.unifiedAnalytics.title'),
+            description: t('features.items.unifiedAnalytics.description'),
+        },
+        {
+            icon: Users,
+            title: t('features.items.scalableEcosystem.title'),
+            description: t('features.items.scalableEcosystem.description'),
+        }
+    ]
+
+    const usecases = [
+        {
+            name: t('useCases.items.enterpriseDataHub.name'),
+            description: t('useCases.items.enterpriseDataHub.description'),
+            icon: LockIcon,
+        },
+        {
+            name: t('useCases.items.omnichannelExperience.name'),
+            description: t('useCases.items.omnichannelExperience.description'),
+            icon: CloudUpload,
+        },
+        {
+            name: t('useCases.items.businessIntelligence.name'),
+            description: t('useCases.items.businessIntelligence.description'),
+            icon: RefreshCw,
+        },
+        {
+            name: t('useCases.items.collaborationProductivity.name'),
+            description: t('useCases.items.collaborationProductivity.description'),
+            icon: Fingerprint,
+        },
+    ]
+
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -79,12 +78,11 @@ export default function IntelligentPlatforms() {
                 <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                     <div className="fade-in">
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-                            <span className="">Intelligent Platforms</span>
+                            <span className="">{t('hero.title')}</span>
                         </h1>
 
                         <p className="text-md sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Comprehensive AI ecosystems that connect multiple touchpoints and deliver
-                            unified, intelligent experiences across every channel.
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </div>
@@ -97,7 +95,7 @@ export default function IntelligentPlatforms() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Key <span className="gradient-text">Features</span>
+                            {t('features.title')} <span className="gradient-text">{t('features.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -133,10 +131,10 @@ export default function IntelligentPlatforms() {
                     <div className="mx-auto">
                         <div className="text-center mb-16 slide-up">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                                How <span className="gradient-text">It Works</span>
+                                {t('howItWorks.title')} <span className="gradient-text">{t('howItWorks.title2')}</span>
                             </h2>
                             <p className="mt-6 text-xl/8 text-foreground/65">
-                                Intelligent Platforms unify data, applications, and insights into a single ecosystem that works seamlessly across your organization.
+                                {t('howItWorks.subtitle')}
                             </p>
                             <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                         </div>
@@ -145,26 +143,26 @@ export default function IntelligentPlatforms() {
                                 <ul role="list" className="mt-8 space-y-8 text-center text-foreground/65">
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 1: Connect & Integrate</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.connectIntegrate.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Bring together data from multiple sources, systems, and applications into one cohesive ecosystem.
+                                            {t('howItWorks.steps.connectIntegrate.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 2: Sync Across Platforms</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.syncAcrossPlatforms.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Enable real-time collaboration and synchronization across platforms, ensuring a connected digital environment.
+                                            {t('howItWorks.steps.syncAcrossPlatforms.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 3: Analyze & Unify</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.analyzeUnify.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Leverage unified analytics to interpret data, uncover insights, and create intelligent, actionable strategies.
+                                            {t('howItWorks.steps.analyzeUnify.description')}
                                         </p>
                                     </li>
                                 </ul>
@@ -178,7 +176,7 @@ export default function IntelligentPlatforms() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Use <span className="gradient-text">Cases</span>
+                            {t('useCases.title')} <span className="gradient-text">{t('useCases.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -202,13 +200,13 @@ export default function IntelligentPlatforms() {
             <section className="py-24">
                 <div className="max-w-5xl mx-auto  text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
                     <Card className=" p-8 shadow-medium">
-                        <h3 className="text-xl font-semibold mb-4">Ready to Build a Smarter Ecosystem?</h3>
+                        <h3 className="text-xl font-semibold mb-4">{t('cta.title')}</h3>
                         <p className="text-foreground/65 mb-6">
-                            Let's explore how MoAi can design intelligent platforms that unify and power your business.
+                            {t('cta.description')}
                         </p>
-                        <Link to="/#contact">
+                        <Link to={t('cta.url')}>
                             <Button size="lg" className="shadow-medium text-white">
-                                Get Started
+                                {t('cta.button')}
                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>

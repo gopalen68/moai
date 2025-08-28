@@ -4,9 +4,11 @@ import odooLogo from '@/assets/odoo_logo_white.png'
 import adobeLogo from '@/assets/adobe_logo_red.png'
 import pythonLogo from '@/assets/python_logo_color.png'
 import workflowLogo from '@/assets/workflow_logo_color.png'
+import { useTranslation } from 'react-i18next'
 
 export default function LogoCloud() {
     const [isOpen, setIsOpen] = useState(false)
+    const { t } = useTranslation('logocloud')
 
     const scrollToSection = (href: string) => {
         const element = document.querySelector(href)
@@ -19,10 +21,10 @@ export default function LogoCloud() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16 slide-up">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                        Our <span className="gradient-text">Stack</span>
+                        {t('title')} <span className="gradient-text">{t('title2')}</span>
                     </h2>
                     <p className="text-lg text-foreground/65 max-w-2xl mx-auto">
-                        Trusted by the world’s most innovative teams
+                        {t('subtitle')}
                     </p>
                     <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                 </div>

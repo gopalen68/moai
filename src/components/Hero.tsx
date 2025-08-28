@@ -1,8 +1,11 @@
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useTranslation } from 'react-i18next'
 import heroBg from '@/assets/hero-bg.jpg'
 
 export default function Hero() {
+  const { t } = useTranslation('hero')
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
     element?.scrollIntoView({ behavior: 'smooth' })
@@ -31,18 +34,18 @@ export default function Hero() {
           <div className="flex items-center justify-center mb-6">
             <Sparkles className="h-6 w-6 text-primary mr-2" />
             <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-              AI-Powered Innovation
+              {t('badge')}
             </span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="">Designed to Think.</span>
+            <span className="">{t('titleLine1')}</span>
             <br />
-            <span className="">Built to Adapt.</span>
+            <span className="">{t('titleLine2')}</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Transforming daily life and business with adaptable AI-powered systems that grow with you.
+            {t('subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -51,7 +54,7 @@ export default function Hero() {
               onClick={() => scrollToSection('#about')}
               className="shadow-large group text-white"
             >
-              Learn More
+              {t('learnMore')}
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -60,7 +63,7 @@ export default function Hero() {
               onClick={() => scrollToSection('#contact')}
               className="border-primary/20 hover:bg-primary/5"
             >
-              Get in Touch
+              {t('getInTouch')}
             </Button>
           </div>
         </div>

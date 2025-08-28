@@ -1,0 +1,26 @@
+{
+  "title": "About",
+  "title2": "MoAi",
+  "ourStory": "Our Story",
+  "paragraph1": "MoAi is a Mauritius-born technology company founded by Sendilen and Gopalen, with a bold vision to transform how artificial intelligence integrates into daily life and business. We develop AI-powered systems and automation tools that are not only smart, but deeply adaptable to changing environments.",
+  "paragraph2": "Inspired by the simplicity and resilience of island life, and backed by a passion for purposeful design, MoAi builds technology that grows with you - intuitive, scalable, and future-ready. Whether through enterprise automation, consumer solutions, or intelligent platforms, MoAi exists to turn complexity into clarity.",
+
+  "features": {
+    "purposefulDesign": {
+      "title": "Purposeful Design",
+      "description": "Every solution is crafted with intention, focusing on real-world impact and user needs."
+    },
+    "adaptableSystems": {
+      "title": "Adaptable Systems",
+      "description": "Our AI grows with you, learning and evolving to meet changing requirements."
+    },
+    "smartInnovation": {
+      "title": "Smart Innovation",
+      "description": "Cutting-edge technology that simplifies complexity and enhances daily experiences."
+    },
+    "globalVision": {
+      "title": "Global Vision",
+      "description": "Island-born innovation with a global perspective, bringing clarity to worldwide challenges."
+    }
+  }
+}

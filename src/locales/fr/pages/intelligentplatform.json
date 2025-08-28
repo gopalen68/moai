@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Plateformes Intelligentes",
+    "subtitle": "Des écosystèmes IA complets qui connectent plusieurs points de contact et offrent des expériences unifiées et intelligentes sur tous les canaux."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "title2": "Clés",
+    "items": {
+      "dataIntegration": {
+        "title": "Intégration des données",
+        "description": "Unifiez sans friction les données issues de multiples sources dans un seul écosystème — pour garantir cohérence, précision et accessibilité à l’échelle de l’entreprise."
+      },
+      "crossPlatformSync": {
+        "title": "Synchronisation multiplateforme",
+        "description": "Activez la synchronisation en temps réel entre appareils, applications et systèmes pour une expérience numérique réellement connectée."
+      },
+      "unifiedAnalytics": {
+        "title": "Analytique unifiée",
+        "description": "Obtenez une vue unique et intelligente de vos opérations grâce à des analyses qui agrègent et interprètent les données sur toutes les plateformes."
+      },
+      "scalableEcosystem": {
+        "title": "Écosystème évolutif",
+        "description": "Construisez un écosystème IA adaptable qui grandit avec vos besoins et prend en charge les technologies actuelles et futures."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Comment",
+    "title2": "ça marche",
+    "subtitle": "Les Plateformes intelligentes unifient données, applications et insights au sein d’un écosystème unique, fluide à l’échelle de votre organisation.",
+    "steps": {
+      "connectIntegrate": {
+        "title": "Étape 1 : Connecter & intégrer",
+        "description": "Rassemblez les données issues de multiples sources, systèmes et applications dans un écosystème cohérent."
+      },
+      "syncAcrossPlatforms": {
+        "title": "Étape 2 : Synchroniser entre plateformes",
+        "description": "Activez la collaboration et la synchronisation en temps réel pour garantir un environnement numérique connecté."
+      },
+      "analyzeUnify": {
+        "title": "Étape 3 : Analyser & unifier",
+        "description": "Exploitez une analytique unifiée pour interpréter les données, révéler des insights et élaborer des stratégies intelligentes et actionnables."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Cas",
+    "title2": "d’Utilisation",
+    "items": {
+      "enterpriseDataHub": {
+        "name": "Hub de données d’entreprise",
+        "description": "Intégrez les silos de données dans un hub central offrant une source de vérité unifiée pour la décision."
+      },
+      "omnichannelExperience": {
+        "name": "Expérience omnicanale",
+        "description": "Offrez des expériences cohérentes sur mobile, web et objets connectés grâce à une synchronisation IA multiplateforme."
+      },
+      "businessIntelligence": {
+        "name": "Business Intelligence",
+        "description": "Exploitez une analytique unifiée pour suivre les KPI, prévoir les tendances et orienter des décisions stratégiques fondées sur les données."
+      },
+      "collaborationProductivity": {
+        "name": "Collaboration & productivité",
+        "description": "Reliez équipes et outils au sein d’une plateforme intelligente unique pour améliorer communication, efficacité et résultats."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à bâtir un écosystème plus intelligent ?",
+    "description": "Explorons comment MoAi peut concevoir des plateformes intelligentes qui unifient et propulsent votre entreprise.",
+    "button": "Nous contacter",
+    "url": "/fr#contact"
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "title": "Get in",
+    "title2": "Touch",
+    "subtitle": "Ready to transform your business with AI? Reach us instantly—click the chat bubble in the bottom-right corner and start a conversation.",
+    "steps": {
+        "clickBubble": {
+            "title": "1) Click the chat bubble",
+            "desc": "Look for the blue bubble at the bottom-right. It opens our assistant—no forms, no wait."
+        },
+        "shareRequirements": {
+            "title": "2) Share your requirements",
+            "desc": "Tell us your goals, integrations, timeline, and budget range. We keep it focused and on-topic."
+        },
+        "followUp": {
+            "title": "3) We follow up",
+            "desc": "The assistant emails a summary to the MoAi team. A human takes it from there—no quotes in chat."
+        }
+    },
+    "whatWeHelp": "What we help with",
+    "helpTags": [
+        "AI Systems & Automation",
+        "Workflow Orchestration",
+        "Ecommerce Intelligence",
+        "Websites & Platforms",
+        "Consulting & Strategy"
+    ],
+    "whatToPrepare": "What to prepare",
+    "prepareList": [
+        "Goals & success metrics",
+        "Integrations (tools, data sources)",
+        "Timeline (ideal start/launch)",
+        "Budget range & currency"
+    ],
+    "policyNote": "On-topic only (MoAi services). We may ask for your budget range, but we don’t provide quotes in chat.",
+    "policyBadges": {
+        "noForms": "No forms—just chat",
+        "humanFollowup": "Human follow-up"
+    },
+    "footerHint": "Look for the",
+    "footerHint2": "blue chat bubble",
+    "footerHint3": "at the bottom-right to start."
+}

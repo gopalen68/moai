@@ -1,0 +1,70 @@
+{
+    "brand": {
+        "title": "MoAi",
+        "tagline": "Transforming daily life and business with adaptable AI-powered systems that grow with you."
+    },
+    "sections": {
+        "company": {
+            "title": "Company",
+            "links": {
+                "about": {
+                    "title": "About Us",
+                    "url": "/#about"
+                },
+                "contact": {
+                    "title": "Contact",
+                    "url": "/#contact"
+                }
+            }
+        },
+        "solutions": {
+            "title": "Solutions",
+            "links": {
+                "enterpriseAutomation": {
+                    "title": "Enterprise Automation",
+                    "url": "/solutions/enterprise-automation"
+                },
+                "consumerAISolutions": {
+                    "title": "Consumer AI Solutions",
+                    "url": "/solutions/consumer-ai-solutions"
+                },
+                "intelligentPlatforms": {
+                    "title": "Intelligent Platforms",
+                    "url": "/solutions/intelligent-platforms"
+                },
+                "customAIDevelopment": {
+                    "title": "Custom AI Development",
+                    "url": "/solutions/custom-ai-development"
+                }
+            }
+        },
+        "resources": {
+            "title": "Resources",
+            "links": {
+                "blog": {
+                    "title": "Blog",
+                    "url": "/blogs"
+                },
+                "support": {
+                    "title": "Support",
+                    "url": "/support"
+                }
+            }
+        }
+    },
+    "legal": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "url": "/privacy-policy"
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "url": "/terms-of-service"
+        },
+        "cookies": {
+            "title": "Cookie Policy",
+            "url": "/cookie-policy"
+        },
+        "copyright": "MoAi. All rights reserved."
+    }
+}

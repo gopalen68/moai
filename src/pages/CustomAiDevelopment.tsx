@@ -4,58 +4,57 @@ import { Target, Users, Lightbulb, Globe, ArrowRight, CloudUpload, LockIcon, Ref
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import heroBg from '@/assets/hero-bg.jpg'
-
-const features = [
-    {
-        icon: Target,
-        title: 'Bespoke Solutions',
-        description: 'We design AI systems tailored to your unique business challenges—ensuring every solution is built with your goals in mind.'
-    },
-    {
-        icon: Globe,
-        title: 'Integration Support',
-        description: 'Seamlessly integrate AI into your existing tools, workflows, and platforms with minimal disruption and maximum value.'
-    },
-    {
-        icon: Lightbulb,
-        title: 'Ongoing Optimization',
-        description: 'Our AI solutions evolve over time—continuously learning, adapting, and improving as your business grows.'
-    },
-    {
-        icon: Users,
-        title: 'Collaborative Development',
-        description: 'We work hand-in-hand with your team to co-create AI that feels natural, intuitive, and perfectly aligned with your vision.'
-    }
-]
-
-const usecases = [
-    {
-        name: 'Industry-Specific AI',
-        description:
-            'Develop custom models for finance, healthcare, retail, manufacturing, and more—tailored to domain-specific needs.',
-        icon: LockIcon,
-    },
-    {
-        name: 'Workflow Automation',
-        description:
-            'Create AI-powered workflows that automate repetitive tasks, approvals, and data handling unique to your operations.',
-        icon: CloudUpload,
-    },
-    {
-        name: 'Intelligent Integrations',
-        description:
-            'Embed AI into your existing platforms—CRM, ERP, or customer portals—for smarter, context-aware performance.',
-        icon: RefreshCw,
-    },
-    {
-        name: 'Long-Term Evolution',
-        description:
-            'Ensure your AI solution remains future-proof with continuous updates, performance monitoring, and optimization.',
-        icon: Fingerprint,
-    },
-]
+import { useTranslation } from 'react-i18next';
 
 export default function CustomAIDevelopment() {
+    const { t } = useTranslation('customeraidevelopment')
+
+    const features = [
+        {
+            icon: Target,
+            title: t('features.items.bespokeSolutions.title'),
+            description: t('features.items.bespokeSolutions.description')
+        },
+        {
+            icon: Globe,
+            title: t('features.items.integrationSupport.title'),
+            description: t('features.items.integrationSupport.description')
+        },
+        {
+            icon: Lightbulb,
+            title: t('features.items.ongoingOptimization.title'),
+            description: t('features.items.ongoingOptimization.description')
+        },
+        {
+            icon: Users,
+            title: t('features.items.collaborativeDevelopment.title'),
+            description: t('features.items.collaborativeDevelopment.description')
+        }
+    ]
+
+    const usecases = [
+        {
+            name: t('useCases.items.industrySpecific.name'),
+            description: t('useCases.items.industrySpecific.description'),
+            icon: LockIcon,
+        },
+        {
+            name: t('useCases.items.workflowAutomation.name'),
+            description: t('useCases.items.workflowAutomation.description'),
+            icon: CloudUpload,
+        },
+        {
+            name: t('useCases.items.intelligentIntegrations.name'),
+            description: t('useCases.items.intelligentIntegrations.description'),
+            icon: RefreshCw,
+        },
+        {
+            name: t('useCases.items.longTermEvolution.name'),
+            description: t('useCases.items.longTermEvolution.description'),
+            icon: Fingerprint,
+        },
+    ]
+
     return (
         <div className="min-h-screen">
             <ScrollToHash />
@@ -79,11 +78,11 @@ export default function CustomAIDevelopment() {
                 <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
                     <div className="fade-in">
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-                            <span className="">Custom AI Development</span>
+                            <span className="">{t('hero.title')}</span>
                         </h1>
 
                         <p className="text-md sm:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Tailored AI solutions designed specifically for your unique challenges and business requirements—built to deliver measurable impact.
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </div>
@@ -96,7 +95,7 @@ export default function CustomAIDevelopment() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Key <span className="gradient-text">Features</span>
+                            {t('features.title')} <span className="gradient-text">{t('features.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -132,10 +131,10 @@ export default function CustomAIDevelopment() {
                     <div className="mx-auto">
                         <div className="text-center mb-16 slide-up">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                                How <span className="gradient-text">It Works</span>
+                                {t('howItWorks.title')} <span className="gradient-text">{t('howItWorks.title2')}</span>
                             </h2>
                             <p className="mt-6 text-xl/8 text-foreground/65">
-                                We create AI that’s as unique as your business—tailored, integrated, and continuously optimized for results.
+                                {t('howItWorks.subtitle')}
                             </p>
                             <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                         </div>
@@ -144,26 +143,26 @@ export default function CustomAIDevelopment() {
                                 <ul role="list" className="mt-8 space-y-8 text-center text-foreground/65">
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 1: Design Bespoke Solutions</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step1.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            We begin by understanding your goals and challenges, then design AI tailored to your exact needs.
+                                            {t('howItWorks.steps.step1.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 2: Integrate Seamlessly</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step2.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            Our team ensures smooth integration with your existing systems and workflows for maximum efficiency.
+                                            {t('howItWorks.steps.step2.description')}
                                         </p>
                                     </li>
                                     <li className="flex flex-col gap-x-3 space-y-2">
                                         <span>
-                                            <strong className="font-semibold text-lg text-foreground">Step 3: Optimize Continuously</strong>
+                                            <strong className="font-semibold text-lg text-foreground">{t('howItWorks.steps.step3.title')}</strong>
                                         </span>
                                         <p className="text-md text-foreground/65 leading-relaxed">
-                                            We don’t stop at deployment—your AI evolves with ongoing monitoring, fine-tuning, and enhancements.
+                                            {t('howItWorks.steps.step3.description')}
                                         </p>
                                     </li>
                                 </ul>
@@ -177,7 +176,7 @@ export default function CustomAIDevelopment() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 slide-up">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                            Use <span className="gradient-text">Cases</span>
+                            {t('useCases.title')} <span className="gradient-text">{t('useCases.title2')}</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
                     </div>
@@ -201,13 +200,13 @@ export default function CustomAIDevelopment() {
             <section className="py-24">
                 <div className="max-w-5xl mx-auto  text-center mt-16 slide-up" style={{ animationDelay: '0.8s' }}>
                     <Card className=" p-8 shadow-medium">
-                        <h3 className="text-xl font-semibold mb-4">Ready to Build Your Custom AI?</h3>
+                        <h3 className="text-xl font-semibold mb-4">{t('cta.title')}</h3>
                         <p className="text-foreground/65 mb-6">
-                            Let’s create AI solutions that are uniquely yours—crafted to solve your toughest challenges.
+                            {t('cta.description')}
                         </p>
-                        <Link to="/#contact">
+                        <Link to={t('cta.url')}>
                             <Button size="lg" className="shadow-medium text-white">
-                                Get Started
+                                {t('cta.button')}
                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>

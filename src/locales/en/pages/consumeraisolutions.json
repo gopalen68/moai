@@ -1,0 +1,75 @@
+{
+    "hero": {
+        "title": "Consumer AI Solutions",
+        "subtitle": "Intuitive AI-powered applications that enhance daily life with personalized, context-aware functionality—helping you stay connected, productive, and inspired."
+    },
+    "features": {
+        "title": "Key",
+        "title2": "Features",
+        "items": {
+            "personalAssistants": {
+                "title": "Personal Assistants",
+                "description": "Stay organized and productive with AI-driven assistants that manage schedules, reminders, and daily tasks effortlessly."
+            },
+            "smartRecommendations": {
+                "title": "Smart Recommendations",
+                "description": "Receive personalized suggestions—whether for shopping, entertainment, or lifestyle—based on your unique preferences and context."
+            },
+            "adaptiveInterfaces": {
+                "title": "Adaptive Interfaces",
+                "description": "Experience interfaces that learn from your behavior, simplifying navigation and tailoring interactions to your needs."
+            },
+            "enhancedDailyLiving": {
+                "title": "Enhanced Daily Living",
+                "description": "Enjoy AI solutions designed to reduce friction in everyday routines, making technology feel natural and intuitive."
+            }
+        }
+    },
+    "howItWorks": {
+        "title": "How",
+        "title2": "It Works",
+        "subtitle": "We design AI that feels natural—solutions that understand, adapt, and assist in real-time.",
+        "steps": {
+            "step1": {
+                "title": "Step 1: Understand Context",
+                "description": "Our AI begins by learning your preferences, patterns, and routines—building a personalized understanding of how you live and work."
+            },
+            "step2": {
+                "title": "Step 2: Assist Intelligently",
+                "description": "From managing tasks to making recommendations, the AI proactively supports you, offering solutions that are timely and relevant to your needs."
+            },
+            "step3": {
+                "title": "Step 3: Adapt & Evolve",
+                "description": "Over time, the system refines itself, adapting to changes in your lifestyle so it remains useful, intuitive, and ahead of your expectations."
+            }
+        }
+    },
+    "useCases": {
+        "title": "Use",
+        "title2": "Cases",
+        "items": {
+            "personalProductivity": {
+                "name": "Personal Productivity",
+                "description": "Manage tasks, meetings, and reminders with AI-powered assistants that adapt to your lifestyle."
+            },
+            "entertainmentShopping": {
+                "name": "Entertainment & Shopping",
+                "description": "Discover music, shows, or products you’ll love through intelligent recommendation engines."
+            },
+            "smartDevicesHome": {
+                "name": "Smart Devices & Home",
+                "description": "Control and personalize connected devices with adaptive AI interfaces that anticipate your needs."
+            },
+            "learningWellness": {
+                "name": "Learning & Wellness",
+                "description": "Access personalized learning resources, fitness tips, and wellness guidance—delivered at the right moment."
+            }
+        }
+    },
+    "cta": {
+        "title": "Ready to Enhance Your Daily Life?",
+        "description": "Let's explore how MoAi can craft intuitive AI solutions tailored just for you.",
+        "button": "Get Started",
+        "url": "/#contact"
+    }
+}
