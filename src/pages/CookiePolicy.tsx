@@ -163,69 +163,78 @@ export default function CookiePolicy() {
 
                         {/* Cookie List (Examples) */}
                         <section id="cookie-list" className="scroll-mt-24">
-                            <h2 className="text-2xl font-bold">Cookie List (Examples)</h2>
-                            <p className="mt-3 text-foreground/80">
-                                The table below shows common categories and example entries. Replace with your actual cookie inventory.
-                            </p>
+                            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <h2 className="text-2xl font-bold">Cookie List (Examples)</h2>
+                                <p className="mt-3 text-foreground/80">
+                                    The table below shows common categories and example entries. Replace with your actual cookie inventory.
+                                </p>
 
-                            <div className="mt-4 overflow-x-auto rounded-xl border border-foreground/10">
-                                <table className="min-w-full border-collapse text-left text-sm">
-                                    <thead className="bg-foreground/5 text-foreground">
-                                        <tr>
-                                            <th className="px-4 py-3 font-semibold">Name</th>
-                                            <th className="px-4 py-3 font-semibold">Provider</th>
-                                            <th className="px-4 py-3 font-semibold">Purpose</th>
-                                            <th className="px-4 py-3 font-semibold">Type</th>
-                                            <th className="px-4 py-3 font-semibold">Duration</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="divide-y divide-foreground/10">
-                                        {[
-                                            {
-                                                name: "moai_session",
-                                                provider: "MoAi Tech Ltd",
-                                                purpose: "Maintains logged-in session and security state",
-                                                type: "Strictly necessary (first-party)",
-                                                duration: "Session",
-                                            },
-                                            {
-                                                name: "_ga",
-                                                provider: "Google Analytics",
-                                                purpose: "Analytics on page usage and interactions",
-                                                type: "Performance (third-party)",
-                                                duration: "13 months",
-                                            },
-                                            {
-                                                name: "locale_pref",
-                                                provider: "MoAi Tech Ltd",
-                                                purpose: "Stores language/region preferences",
-                                                type: "Functional (first-party)",
-                                                duration: "6 months",
-                                            },
-                                            {
-                                                name: "_fbp",
-                                                provider: "Meta",
-                                                purpose: "Ad delivery/retargeting and measurement",
-                                                type: "Advertising (third-party)",
-                                                duration: "3 months",
-                                            },
-                                        ].map((c) => (
-                                            <tr key={c.name} className="text-foreground/80">
-                                                <td className="px-4 py-3">{c.name}</td>
-                                                <td className="px-4 py-3">{c.provider}</td>
-                                                <td className="px-4 py-3">{c.purpose}</td>
-                                                <td className="px-4 py-3">{c.type}</td>
-                                                <td className="px-4 py-3">{c.duration}</td>
+                                <div className="mt-4 max-w-full overflow-x-auto rounded-xl border border-foreground/10">
+                                    <table className="w-full table-fixed border-collapse text-left text-sm">
+                                        <colgroup>
+                                            <col className="w-[15%]" />
+                                            <col className="w-[20%]" />
+                                            <col className="w-[30%]" />
+                                            <col className="w-[20%]" />
+                                            <col className="w-[15%]" />
+                                        </colgroup>
+                                        <thead className="bg-foreground/5 text-foreground">
+                                            <tr>
+                                                <th className="px-4 py-3 font-semibold">Name</th>
+                                                <th className="px-4 py-3 font-semibold">Provider</th>
+                                                <th className="px-4 py-3 font-semibold">Purpose</th>
+                                                <th className="px-4 py-3 font-semibold">Type</th>
+                                                <th className="px-4 py-3 font-semibold">Duration</th>
                                             </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
+                                        </thead>
+                                        <tbody className="divide-y divide-foreground/10">
+                                            {[
+                                                {
+                                                    name: "moai_session",
+                                                    provider: "MoAi Tech Ltd",
+                                                    purpose: "Maintains logged-in session and security state",
+                                                    type: "Strictly necessary (first-party)",
+                                                    duration: "Session",
+                                                },
+                                                {
+                                                    name: "_ga",
+                                                    provider: "Google Analytics",
+                                                    purpose: "Analytics on page usage and interactions",
+                                                    type: "Performance (third-party)",
+                                                    duration: "13 months",
+                                                },
+                                                {
+                                                    name: "locale_pref",
+                                                    provider: "MoAi Tech Ltd",
+                                                    purpose: "Stores language/region preferences",
+                                                    type: "Functional (first-party)",
+                                                    duration: "6 months",
+                                                },
+                                                {
+                                                    name: "_fbp",
+                                                    provider: "Meta",
+                                                    purpose: "Ad delivery/retargeting and measurement",
+                                                    type: "Advertising (third-party)",
+                                                    duration: "3 months",
+                                                },
+                                            ].map((c) => (
+                                                <tr key={c.name} className="text-foreground/80">
+                                                    <td className="px-4 py-3 whitespace-normal break-words">{c.name}</td>
+                                                    <td className="px-4 py-3 whitespace-normal break-words">{c.provider}</td>
+                                                    <td className="px-4 py-3 whitespace-normal break-words">{c.purpose}</td>
+                                                    <td className="px-4 py-3 whitespace-normal break-words">{c.type}</td>
+                                                    <td className="px-4 py-3 whitespace-normal break-words">{c.duration}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                            <p className="mt-3 text-sm text-foreground/60">
-                                Note: Third-party providers may change their cookies and durations. Refer to their documentation for the most
-                                current details.
-                            </p>
+                                <p className="mt-3 text-sm text-foreground/60">
+                                    Note: Third-party providers may change their cookies and durations. Refer to their documentation for the most
+                                    current details.
+                                </p>
+                            </div>
                         </section>
 
                         {/* Managing Preferences */}
